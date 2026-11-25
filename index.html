@@ -558,109 +558,9 @@
     .dl-bar{height:8px;border-radius:99px;background:var(--bg-surface);overflow:hidden}
     .dl-bar i{display:block;height:100%;width:0;background:var(--gradient-brand);transition:width .2s}
     .dl-x{border:none;background:none;color:var(--text-muted);cursor:pointer;font-size:1.1rem}
-    /* NexaGHOR Download Manager (tab) */
-    .nexa-dl-head .btn{padding:5px 9px;font-size:.7rem}
-    .nexa-folder-note{padding:8px 10px;margin-bottom:8px;border-radius:12px;background:rgba(var(--accent-rgb),.08);border:1px dashed rgba(var(--accent-rgb),.4);font-size:.68rem;color:var(--text-muted);line-height:1.45}
-    .nexa-dl-opt{display:flex;align-items:center;gap:7px;font-size:.7rem;color:var(--text-muted);margin-bottom:8px;cursor:pointer}
-    .nexa-dl-opt input{accent-color:var(--accent-cyan)}
-    .nexa-dl-tools{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
-    .nexa-dl-tools .btn{padding:6px 9px;font-size:.7rem;gap:4px}
-    .nexa-dl-tools svg{width:13px;height:13px}
-    .nexa-dl-search{display:flex;align-items:center;gap:7px;padding:0 10px;margin-bottom:6px;border-radius:12px;border:1px solid var(--border-color);background:var(--bg-surface)}
-    .nexa-dl-search input{flex:1;min-width:0;height:34px;border:0;outline:0;background:transparent;color:var(--text-main);font:inherit;font-size:.78rem}
-    .nexa-dl-list{min-height:60px}
-    .nexa-dl-empty{text-align:center;padding:24px 10px;color:var(--text-dim);font-size:.8rem}
-    .nexa-dl-item{padding:10px 0;border-top:1px solid var(--border-color)}
-    .nexa-dl-item:first-child{border-top:0}
-    .nexa-dl-item-head{display:flex;align-items:flex-start;gap:9px}
-    .nexa-dl-th{flex:none;width:46px;height:46px;border-radius:11px;overflow:hidden;background:var(--bg-surface);display:grid;place-items:center;font-size:1.1rem}
-    .nexa-dl-th img{width:100%;height:100%;object-fit:cover;display:block}
-    .nexa-dl-title{flex:1;min-width:0;font-size:.78rem;font-weight:800;line-height:1.3;word-break:break-word}
-    .nexa-dl-meta{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px;color:var(--text-dim);font-size:.66rem;font-weight:500}
-    .nexa-dl-meta span{padding:2px 6px;border-radius:999px;background:var(--bg-surface);border:1px solid var(--border-color)}
-    .nexa-dl-status{font-size:.66rem;font-weight:800;color:var(--accent-cyan);white-space:nowrap}
-    .nexa-dl-status.st-paused,.nexa-dl-status.st-queued{color:var(--accent-amber)}
-    .nexa-dl-status.st-done{color:var(--accent-emerald)}
-    .nexa-dl-status.st-error{color:var(--accent-rose)}
-    .nexa-dl-progress{height:7px;margin:8px 0 5px;border-radius:99px;overflow:hidden;background:var(--bg-surface)}
-    .nexa-dl-progress i{display:block;width:0;height:100%;background:var(--gradient-brand);transition:width .35s}
-    .nexa-dl-progress.ok i{background:var(--accent-emerald)}
-    .nexa-dl-progress.ind i{width:35%!important;animation:nexaDlInd 1.2s ease-in-out infinite;transition:none}
-    @keyframes nexaDlInd{0%{margin-left:-35%}100%{margin-left:100%}}
-    .nexa-dl-time{font-size:.68rem;color:var(--text-muted);line-height:1.5}
-    .nexa-dl-err{margin-top:3px;font-size:.68rem;color:var(--accent-rose);word-break:break-word}
-    .nexa-dl-actions{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:6px;margin-top:7px}
-    .nexa-dl-actions button{padding:5px 10px;font:inherit;font-size:.68rem;font-weight:800;border-radius:9px;border:1px solid var(--border-color);background:var(--bg-surface);color:var(--text-main);cursor:pointer}
-    .nexa-dl-actions button.danger{color:var(--accent-rose);border-color:rgba(244,63,94,.35)}
-    .nexa-dl-actions button.offline{color:var(--accent-emerald);border-color:rgba(16,185,129,.4)}
-    /* Offline Library */
-    .nol-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:16px 16px 8px}
-    .nol-head h2{font-size:1.15rem;margin:0}
-    .nol-head p{font-size:.72rem;color:var(--text-muted);margin:3px 0 0}
-    .nol-x{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--border-color);background:var(--bg-surface);color:var(--text-muted);cursor:pointer;font-size:.95rem}
-    .nol-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:6px 16px}
-    .nol-tabs button{padding:11px 8px;border-radius:14px;border:1px solid var(--border-color);background:var(--bg-surface);color:var(--text-main);font:inherit;font-size:.82rem;font-weight:800;cursor:pointer}
-    .nol-tabs button.on{border-color:var(--accent-cyan);background:rgba(var(--accent-rgb),.12);color:var(--accent-cyan)}
-    .nol-tabs i{font-style:normal;margin-left:5px;padding:1px 7px;border-radius:999px;background:var(--bg-card);font-size:.7rem}
-    .nol-bar{display:flex;gap:8px;padding:6px 16px}
-    .nol-search{flex:1;min-width:0;display:flex;align-items:center;gap:8px;padding:0 12px;border-radius:14px;border:1px solid var(--border-color);background:var(--bg-surface)}
-    .nol-search:focus-within{border-color:var(--accent-cyan)}
-    .nol-search input{flex:1;min-width:0;height:40px;border:0;outline:0;background:transparent;color:var(--text-main);font:inherit;font-size:.85rem}
-    .nol-search button{border:0;background:none;color:var(--text-muted);cursor:pointer;font-size:.9rem}
-    .nol-bar select{flex:none;max-width:112px;height:42px;border-radius:14px;border:1px solid var(--border-color);background:var(--bg-surface);color:var(--text-main);font:inherit;font-size:.74rem;padding:0 8px}
-    .nol-store{padding:2px 18px 6px;font-size:.68rem;color:var(--text-dim)}
-    .nol-list{flex:1;min-height:120px;overflow-y:auto;padding:4px 16px 16px;display:grid;gap:8px;align-content:start;-webkit-overflow-scrolling:touch}
-    .nol-empty{text-align:center;padding:30px 10px;color:var(--text-dim);font-size:.82rem;line-height:1.7}
-    .nol-item{display:flex;align-items:center;gap:11px;padding:10px;border:1px solid var(--border-color);border-radius:15px;background:var(--bg-surface)}
-    .nol-item.clk{cursor:pointer}
-    .nol-item.clk:hover{border-color:var(--accent-cyan)}
-    .nol-th{position:relative;flex:none;width:62px;height:62px;border-radius:13px;overflow:hidden;background:var(--bg-card);display:grid;place-items:center;font-size:1.4rem;cursor:pointer}
-    .nol-th img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .nol-th b{position:relative;z-index:1;width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;display:grid;place-items:center;font-size:.8rem}
-    .nol-meta{flex:1;min-width:0}
-    .nol-meta b{display:block;font-size:.82rem;line-height:1.3;word-break:break-word}
-    .nol-meta small{display:block;color:var(--text-dim);font-size:.68rem;margin-top:3px}
-    .nol-pg{height:3px;border-radius:9px;background:var(--bg-card);margin-top:6px;overflow:hidden}
-    .nol-pg i{display:block;height:100%;background:var(--accent-cyan)}
-    .nol-acts{flex:none;display:flex;gap:5px}
-    .nol-acts button,.nol-back,.nol-nav button{border:1px solid var(--border-color);background:var(--bg-card);color:var(--text-main);border-radius:10px;min-width:34px;height:34px;padding:0 9px;font:inherit;font-size:.75rem;font-weight:800;cursor:pointer}
-    .nol-acts button.del{color:var(--accent-rose);border-color:rgba(244,63,94,.35)}
-    .nol-back{justify-self:start;margin-bottom:2px}
-    .nol-title{font-weight:800;font-size:.95rem;margin:4px 0}
-    .nol-text{font-size:var(--nol-fs,.95rem);line-height:1.9;white-space:pre-line;padding:14px;border:1px solid var(--border-color);border-radius:14px;background:var(--bg-surface);word-break:break-word}
-    .nol-text mark{background:rgba(250,204,21,.45);color:inherit;border-radius:3px;padding:0 1px}
-    .nol-nav{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-    .nol-badge{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:999px;background:rgba(var(--accent-rgb),.14);color:var(--accent-cyan);font-size:.64rem;font-weight:800}
-    /* Offline full-screen player */
-    .nol-player{position:fixed;inset:0;z-index:1300;display:none;background:#000;flex-direction:column;align-items:center;justify-content:center}
-    .nol-player.open{display:flex}
-    .nol-player video{width:100%;height:100%;max-height:100dvh;object-fit:contain;background:#000;outline:0}
-    .nol-pbar{position:absolute;left:0;right:0;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:calc(10px + env(safe-area-inset-top)) 12px 26px;background:linear-gradient(180deg,rgba(0,0,0,.78),transparent);color:#fff;transition:opacity .25s;pointer-events:none}
-    .nol-pbar.hide{opacity:0}
-    .nol-pbar b{flex:1;min-width:0;font-size:.82rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .nol-pbar div{display:flex;gap:7px;pointer-events:auto}
-    .nol-pbar.hide div{pointer-events:none}
-    .nol-pbar button{height:36px;min-width:36px;padding:0 12px;border-radius:999px;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.55);color:#fff;font:inherit;font-size:.76rem;font-weight:800;cursor:pointer}
-    /* ===== v25: Download Manager tab + player controls ===== */
-    .nol-home{display:flex;flex-direction:column;max-width:760px;margin:0 auto;width:100%}
-    .nol-home .nol-head{padding:4px 2px 8px}
-    .nol-tabs{grid-template-columns:repeat(3,1fr);gap:6px;padding:4px 0 6px}
-    .nol-tabs button{padding:10px 4px;font-size:.74rem;border-radius:13px;line-height:1.25}
-    .nol-tabs i{margin-left:4px;padding:1px 6px;font-size:.64rem}
-    .nol-bar{padding:4px 0}
-    .nol-store{padding:2px 2px 6px}
-    .nol-list{overflow:visible;padding:4px 0 16px;min-height:0;flex:none}
-    .nol-th{width:104px;height:66px;border-radius:12px}
-    .nol-th.blur img{filter:blur(12px)}
-    .nexa-dl-th img.blur{filter:blur(8px)}
-    .nol-dl-box[hidden]{display:none}
-    .nol-dl-box{padding:2px 0 14px}
     .nav-btn{flex:1;min-width:0;padding:6px 1px}
     .nav-btn > span:not(.nav-badge-dot):not(.nav-dl-n){font-size:.6rem;line-height:1.1;text-align:center;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .nav-btn.nav-dlm > span:not(.nav-dl-n){white-space:normal;overflow:visible}
     .nav-btn svg.nav-ic{width:20px;height:20px}
-    .nav-dl-n{position:absolute;top:0;right:14%;min-width:16px;height:16px;padding:0 4px;border-radius:99px;background:var(--accent-rose);color:#fff;font-size:.58rem;font-weight:900;display:none;place-items:center;line-height:1}
-    .nav-btn.busy svg.nav-ic{animation:dlBob 1s ease-in-out infinite}
     @keyframes dlBob{0%,100%{transform:translateY(-1px)}50%{transform:translateY(2px)}}
     .gpx-w{touch-action:none}
     .gpx-on .gpx-w video,.gpx-on .gpx-w iframe{filter:brightness(var(--gpx-b,1))}
@@ -707,15 +607,6 @@
     .tv-popup-audios button{border:0;border-radius:6px;padding:6px 8px;background:rgba(255,255,255,.12);color:#fff;text-align:left;font:inherit;font-size:.72rem;cursor:pointer}
     .tv-popup-audios button.active{background:var(--accent-cyan);color:#071018;font-weight:800}
     .tv-popup-window.controls-hidden .tv-popup-tools{display:none}
-    .nol-popup-layer{position:fixed;inset:0;z-index:10001;pointer-events:none}
-    .nol-popup-window{position:fixed;right:16px;bottom:16px;width:min(420px,calc(100vw - 32px));height:min(236px,calc(56.25vw - 18px));min-width:260px;min-height:180px;resize:both;overflow:hidden;border:2px solid rgba(255,255,255,.35);border-radius:14px;background:#000;box-shadow:0 16px 55px rgba(0,0,0,.65);pointer-events:auto}
-    .nol-popup-window video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
-    .nol-popup-head{position:absolute;left:0;right:0;top:0;height:42px;z-index:5;display:flex;align-items:center;gap:8px;padding:5px 7px 5px 12px;background:linear-gradient(180deg,rgba(0,0,0,.82),rgba(0,0,0,0));color:#fff;cursor:grab;touch-action:none;user-select:none}
-    .nol-popup-head b{flex:1;font-size:.74rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-    .nol-popup-head button{width:30px;height:30px;border:0;border-radius:9px;background:rgba(0,0,0,.58);color:#fff;font-size:1.15rem;cursor:pointer}
-    .nol-popup-window.controls-hidden .nol-popup-head{display:none}
-    .nol-popup-window::after{content:'↘';position:absolute;right:3px;bottom:1px;z-index:8;color:rgba(255,255,255,.72);font-size:15px;pointer-events:none}
-    .nol-player.nol-rot{inset:auto;top:0;left:0;width:100vh;width:100dvh;height:100vw;transform-origin:0 0;transform:rotate(90deg) translateY(-100%)}
     .hist-sec{margin:16px 0;padding-top:14px;border-top:1px solid var(--border-color)}
     .hist-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
     .hist-head button{background:none;border:none;color:var(--accent-cyan);font-weight:700;font-size:.8rem;cursor:pointer}
@@ -1550,57 +1441,6 @@
       <input id="tvMoreQ" class="input-control" type="search" placeholder="🔍 খুঁজুন..." oninput="app.tvMoreSearch(this.value)" autocomplete="off" style="width:100%;margin-bottom:14px;">
       <div class="tv-grid" id="tvMoreGrid"></div>
     </section>
-    <section id="view-dlm" class="view-page">
-      <div id="nexaOfflineHome" class="nol-home" aria-label="Download Manager">
-        <div class="nol-head"><div><h2>Download Manager</h2><p>Internet ছাড়াও কাজ করে — ডাউনলোড করা সব ভিডিও ও Magazine এখানে থাকবে।</p></div></div>
-        <div class="nol-tabs"><button type="button" id="nolTabDl" data-nol="tab-dl">⬇ Downloading<i id="nolCD">0</i></button><button type="button" id="nolTabVideo" data-nol="tab-video">▶ Offline Video<i id="nolCV">0</i></button><button type="button" id="nolTabBook" data-nol="tab-book">📚 Magazine<i id="nolCB">0</i></button></div>
-        <div class="nol-bar"><div class="nol-search"><span>🔍</span><input id="nolQ" type="search" placeholder="Search…" autocomplete="off"><button type="button" id="nolQx" data-nol="clear" hidden aria-label="Clear">✕</button></div><select id="nolSort" aria-label="Sort"><option value="new">Newest</option><option value="name">Name A-Z</option><option value="size">Biggest</option></select></div>
-        <div class="nol-store" id="nolStore"></div>
-        <div id="nolDlBox" class="nol-dl-box" hidden>
-          <div class="nexa-folder-note">ডাউনলোড করা ভিডিও <b>NexaGHOR › Movie / Episode</b> ফোল্ডারে সংরক্ষিত হয়। Pause করলে বা Internet গেলে progress হারায় না — আবার চালু করলে যেখান থেকে থেমেছিল সেখান থেকে চলবে।</div>
-          <label class="nexa-dl-opt"><input type="checkbox" id="nexaDlDev" onchange="window.app&&app.dlSetDevCopy(this.checked)"> শেষ হলে device-এর Downloads folder-এও কপি সেভ করুন</label>
-          <div class="nexa-dl-tools"><button type="button" class="btn btn-secondary btn-sm" onclick="window.app&&app.pauseAllDownloads()">⏸ Pause all</button><button type="button" class="btn btn-primary btn-sm" onclick="window.app&&app.resumeAllDownloads()">▶ Resume all</button><button type="button" class="btn btn-danger btn-sm" onclick="window.app&&app.clearFinishedDownloads()">🗑 Clear done</button></div>
-          <div class="nexa-dl-list" id="nexaDlList"></div>
-        </div>
-        <div class="nol-list" id="nolList"></div>
-      </div>
-    </section>
-    <section id="view-nolplay" class="view-page">
-    <div id="nolPlayer" class="nol-player gpx-w" role="dialog" aria-label="Offline video player">
-      <div class="nol-pbar" id="nolPBar"><button type="button" class="nol-back" data-nol="pclose" aria-label="Back">← Back</button><b id="nolPT">Offline Video</b><div><button type="button" data-nol="popup" aria-label="Popup video">Popup</button><button type="button" data-nol="rot" aria-label="Rotate screen">⟳ Rotate</button><button type="button" id="nolFs" data-nol="fs">⛶ Full Screen</button></div></div>
-      <div class="nol-stage" id="nolStage"><video id="nolVideo" controls playsinline preload="auto"></video></div>
-    </div>
-    </section>
-<style id="nol-page-css">
-#nexaOfflineHome.nol-deep>.nol-head,#nexaOfflineHome.nol-deep>.nol-tabs,#nexaOfflineHome.nol-deep>.nol-bar,#nexaOfflineHome.nol-deep>#nolStore{display:none!important}
-#view-nolplay{padding:0!important;margin:0!important}
-body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!important}
-.nol-player{position:fixed;inset:0;z-index:1300;display:flex;flex-direction:column;height:100dvh;overflow:hidden}
-.nol-player .nol-stage{flex:1;min-height:0;display:flex}
-.nol-player .nol-stage video{flex:1;min-width:0;width:100%;height:100%;max-height:none;aspect-ratio:auto;object-fit:contain}
-
-.nol-player{justify-content:flex-start;align-items:stretch;overflow-y:auto;background:var(--bg-body,var(--bg-primary,#0b0f14));color:var(--text-main,#fff)}
-.nol-player .nol-pbar{position:sticky;top:0;flex:none;padding:calc(10px + env(safe-area-inset-top)) 12px 10px;background:var(--bg-card,#151a22);border-bottom:1px solid var(--border-color,rgba(255,255,255,.12));pointer-events:auto;color:inherit}
-.nol-player .nol-pbar.hide{opacity:1}.nol-player .nol-pbar.hide div{pointer-events:auto}
-.nol-player .nol-pbar button.nol-back{background:var(--gradient-brand,#06b6d4);color:var(--on-accent,#000);border:0}
-.nol-stage{position:relative;flex:none;width:100%;background:#000}
-.nol-player .nol-stage video{display:block;width:100%;height:auto;aspect-ratio:16/9;max-height:62dvh;background:#000}
-.nol-pinfo{padding:14px 16px;font-size:.8rem;color:var(--text-dim,#9aa4b2);line-height:1.6}
-.nol-pinfo b{display:block;font-size:1rem;color:var(--text-main,#fff);margin-bottom:4px}
-.nol-player:fullscreen{overflow:hidden;background:#000}
-.nol-player:fullscreen .nol-stage{position:fixed;inset:0;z-index:5}
-.nol-player:fullscreen .nol-stage video{height:100%;max-height:none;aspect-ratio:auto;object-fit:contain}
-.nol-player:fullscreen .nol-pbar{position:absolute;left:0;right:0;top:0;z-index:8;background:linear-gradient(180deg,rgba(0,0,0,.78),transparent);border:0;color:#fff;padding-bottom:26px;pointer-events:none}
-.nol-player:fullscreen .nol-pbar.hide{opacity:0}
-.nol-player:fullscreen .nol-pbar div,.nol-player:fullscreen .nol-pbar button{pointer-events:auto}
-.nol-player:fullscreen .nol-pbar.hide div,.nol-player:fullscreen .nol-pbar.hide button{pointer-events:none}
-.nol-player:fullscreen .nol-pinfo{display:none}
-
-.nol-player .nol-pbar{position:absolute!important;left:0;right:0;top:0;z-index:8;background:linear-gradient(180deg,rgba(0,0,0,.78),transparent)!important;border:0!important;color:#fff!important;padding:calc(10px + env(safe-area-inset-top)) 12px 26px!important;pointer-events:none!important;transition:opacity .25s}
-.nol-player .nol-pbar div,.nol-player .nol-pbar button{pointer-events:auto!important}
-.nol-player .nol-pbar.hide{opacity:0!important}
-.nol-player .nol-pbar.hide div,.nol-player .nol-pbar.hide button{pointer-events:none!important}
-</style>
 <style id="gpx-extra-css">
 .gpx-w{position:relative}
 .gpx-spd{position:absolute;top:50px;right:10px;z-index:6;padding:5px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.55);color:#fff;font:700 .72rem/1 inherit;opacity:0;pointer-events:none;transition:opacity .25s;backdrop-filter:blur(6px)}
@@ -1692,325 +1532,6 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
           });
         }
         return { attach: attach };
-      })();
-    </script>
-    <script>
-      (function () {
-        var DB = 'gghor_nexa_offline', QK = 'gghor_nexa_download_queue', PK = 'gghor_nexa_pos_';
-        var S = { tab: 'video', q: '', sort: 'new', book: null, ep: null, videos: [], books: [], eps: [], texts: {}, url: null, cur: null, loaded: false, t0: 0 };
-        var $ = function (id) { return document.getElementById(id); };
-        var noop = function () {};
-        function esc(x) { return String(x == null ? '' : x).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
-        function toast(m, t) { try { if (window.app && app.toast) app.toast(m, t || 'info'); } catch (e) {} }
-        function openDb() {
-          return new Promise(function (ok, no) {
-            var r = indexedDB.open(DB, 2);
-            r.onupgradeneeded = function () {
-              if (!r.result.objectStoreNames.contains('videos')) r.result.createObjectStore('videos', { keyPath: 'id' });
-              if (!r.result.objectStoreNames.contains('appdata')) r.result.createObjectStore('appdata', { keyPath: 'id' });
-            };
-            r.onsuccess = function () { ok(r.result); };
-            r.onerror = function () { no(r.error); };
-          });
-        }
-        function all(store) { return openDb().then(function (d) { return new Promise(function (ok, no) { var r = d.transaction(store).objectStore(store).getAll(); r.onsuccess = function () { ok(r.result || []); }; r.onerror = function () { no(r.error); }; }); }); }
-        function one(store, id) { return openDb().then(function (d) { return new Promise(function (ok, no) { var r = d.transaction(store).objectStore(store).get(id); r.onsuccess = function () { ok(r.result); }; r.onerror = function () { no(r.error); }; }); }); }
-        function appData(id) { return one('appdata', id).then(function (r) { return r && r.data; }).catch(function () { return null; }); }
-        function size(n) { n = Number(n) || 0; if (n < 1024) return n + ' B'; if (n < 1048576) return (n / 1024).toFixed(0) + ' KB'; if (n < 1073741824) return (n / 1048576).toFixed(1) + ' MB'; return (n / 1073741824).toFixed(2) + ' GB'; }
-        function dt(ts) { try { return new Date(ts || Date.now()).toLocaleString('bn-BD', { dateStyle: 'medium', timeStyle: 'short' }); } catch (e) { return ''; } }
-        function clock(s) { s = Math.max(0, Math.floor(s || 0)); var h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(x).padStart(2, '0'); }
-        function rx(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
-        function hl(text, q) { var t = esc(text); if (!q || q.length < 2) return t; try { return t.replace(new RegExp('(' + rx(esc(q)) + ')', 'gi'), '<mark>$1</mark>'); } catch (e) { return t; } }
-        function textOf(e) { return S.texts[e.id + '|' + (e.updatedAt || '')] || S.texts[e.id] || ''; }
-        function lc(s) { return String(s || '').toLowerCase(); }
-
-        function load() {
-          return Promise.all([all('videos').catch(function () { return []; }), appData('books'), appData('book_episodes'), appData('book_texts')]).then(function (v) {
-            S.videos = v[0] || []; S.books = Array.isArray(v[1]) ? v[1] : []; S.eps = Array.isArray(v[2]) ? v[2] : []; S.texts = v[3] && typeof v[3] === 'object' ? v[3] : {}; S.loaded = true;
-          });
-        }
-        function savedEps(bookId) { return S.eps.filter(function (e) { return e.bookId === bookId && textOf(e); }); }
-        function libBooks() { return S.books.filter(function (b) { return b && savedEps(b.id).length; }); }
-
-        function counts() {
-          var cv = $('nolCV'), cb = $('nolCB'); if (cv) cv.textContent = S.videos.length; if (cb) cb.textContent = libBooks().length;
-          var a = $('nolTabVideo'), b = $('nolTabBook'), d = $('nolTabDl'), cd = $('nolCD'); if (a) a.classList.toggle('on', S.tab === 'video'); if (b) b.classList.toggle('on', S.tab === 'book'); if (d) d.classList.toggle('on', S.tab === 'dl'); if (cd) cd.textContent = activeN();
-          var so = $('nolSort'); if (so) so.style.display = S.tab === 'video' ? '' : 'none';
-          var q = $('nolQ'); if (q) var bnL = false; try { bnL = localStorage.getItem('gghor_lang') === 'bn'; } catch (e) {} q.placeholder = bnL ? (S.tab === 'video' ? 'ভিডিও খুঁজুন…' : S.tab === 'dl' ? 'Download খুঁজুন…' : 'গল্প / Book / লেখা খুঁজুন…') : (S.tab === 'video' ? 'Search videos…' : S.tab === 'dl' ? 'Search downloads…' : 'Search stories / books…');
-          var x = $('nolQx'); if (x) x.hidden = !S.q;
-        }
-        function storeLine() {
-          var el = $('nolStore'); if (!el) return;
-          var used = S.videos.reduce(function (a, v) { return a + ((v.blob && v.blob.size) || v.size || 0); }, 0);
-          var base = S.videos.length + ' ভিডিও · ' + size(used);
-          el.textContent = base;
-          try { if (navigator.storage && navigator.storage.estimate) navigator.storage.estimate().then(function (e) { if (e && e.quota) el.textContent = base + ' · Device storage: ' + size(e.usage) + ' / ' + size(e.quota); }).catch(noop); } catch (e) {}
-        }
-
-        function renderVideos() {
-          var q = lc(S.q).trim(), L = S.videos.filter(function (v) { return !q || lc(v.title).indexOf(q) > -1 || lc(v.kind).indexOf(q) > -1; });
-          L.sort(function (a, b) {
-            if (S.sort === 'name') return String(a.title || '').localeCompare(String(b.title || ''));
-            if (S.sort === 'size') return ((b.blob && b.blob.size) || 0) - ((a.blob && a.blob.size) || 0);
-            return (b.savedAt || 0) - (a.savedAt || 0);
-          });
-          if (!L.length) return '<div class="nol-empty">' + (S.videos.length ? 'কোনো ভিডিও মেলেনি।<br>অন্য শব্দ দিয়ে খুঁজুন।' : 'কোনো Offline Video নেই।<br>Entertainment থেকে ভিডিও Download করলে এখানে জমা হবে।') + '</div>';
-          return L.map(function (v) {
-            var pos = 0; try { pos = Number(localStorage.getItem(PK + v.id)) || 0; } catch (e) {}
-            var d = Number(v.duration) || 0, pg = d && pos > 5 ? Math.min(100, pos / d * 100) : 0;
-            var th = v.thumb ? '<img src="' + esc(v.thumb) + '" alt="" loading="lazy" onerror="this.remove()">' : '';
-            return '<div class="nol-item" data-id="' + esc(v.id) + '"><div class="nol-th' + (v.adult ? ' blur' : '') + '" data-act="play">' + th + '<b>▶</b></div><div class="nol-meta" data-act="play" style="cursor:pointer"><b>' + hl(v.title || 'Offline Video', S.q) + '</b><small>' + esc(v.kind || 'Video') + ' · ' + size((v.blob && v.blob.size) || v.size) + ' · ' + esc(dt(v.savedAt)) + (pos > 5 ? ' · ⏱ ' + clock(pos) : '') + '</small>' + (pg ? '<div class="nol-pg"><i style="width:' + pg.toFixed(0) + '%"></i></div>' : '') + '</div><div class="nol-acts"><button type="button" data-act="fs" title="Full Screen">⛶</button><button type="button" data-act="save" title="Device-এ সেভ">⬇</button><button type="button" class="del" data-act="del" title="Delete">🗑</button></div></div>';
-          }).join('');
-        }
-
-        function matchEp(e, q) { return lc(e.title).indexOf(q) > -1 || (q.length >= 2 && lc(textOf(e)).indexOf(q) > -1); }
-        function renderBooks() {
-          var q = lc(S.q).trim();
-          if (S.ep) return renderReader(q);
-          if (S.season != null) return renderSeasonEps(q);
-          if (S.book) return renderSeasons();
-          var B = libBooks(), rows = [];
-          B.forEach(function (b) {
-            var eps = savedEps(b.id), tm = !q || lc(b.title).indexOf(q) > -1, hits = q ? eps.filter(function (e) { return matchEp(e, q); }).length : 0;
-            if (tm || hits) rows.push({ b: b, n: eps.length, all: S.eps.filter(function (e) { return e.bookId === b.id; }).length, hits: tm ? 0 : hits });
-          });
-          if (!rows.length) return '<div class="nol-empty">' + (B.length ? 'কিছু মেলেনি।<br>অন্য শব্দ দিয়ে খুঁজুন।' : 'কোনো Offline Book নেই।<br>Online অবস্থায় Magazine-এর <b>Offline Save</b> বাটনে চাপুন।') + '</div>';
-          return '<div class="home-product-grid">' + rows.map(function (r) {
-            var b = r.b;
-            return '<div class="home-product-card book-card" data-bid="' + esc(b.id) + '"><div class="home-product-thumb">' + (b.cover ? '<img src="' + esc(b.cover) + '" alt="" loading="lazy" decoding="async" />' : '<div class="bk-ph">📖</div>') + (b.magazineCategory ? '<span class="hp-tag">' + esc(b.magazineCategory) + '</span>' : '') + (r.hits ? '<span class="nol-badge" style="position:absolute;left:8px;bottom:8px">' + r.hits + 'টি মিল</span>' : '') + '</div><div class="home-product-info"><h4 class="home-product-name">' + hl(b.title, S.q) + '</h4><div class="hp-foot"><span>' + r.n + '/' + r.all + 'টি পর্ব</span></div></div></div>';
-          }).join('') + '</div>';
-        }
-        function bookEps() {
-          return S.eps.filter(function (e) { return e.bookId === S.book; }).sort(function (a, b) { return (a.season || 1) - (b.season || 1) || (a.number || 0) - (b.number || 0); });
-        }
-        function curBook() { return S.books.find(function (x) { return x.id === S.book; }) || {}; }
-        function backBtn(act, label) { return '<div style="margin-bottom:16px;"><button type="button" class="btn btn-secondary btn-sm" data-act="' + act + '"><i data-lucide="arrow-left"></i> ' + label + '</button></div>'; }
-        function renderSeasons() {
-          var b = curBook(), eps = bookEps(), m = {};
-          eps.forEach(function (e) { (m[e.season || 1] = m[e.season || 1] || []).push(e); });
-          var ss = Object.keys(m).sort(function (x, y) { return x - y; });
-          var chips = (b.magazineCategory ? '<span class="ph-chip">' + esc(b.magazineCategory) + '</span>' : '') + '<span class="ph-chip green">' + eps.length + 'টি পর্ব</span>';
-          return backBtn('back', 'Back to Magazine') + '<div class="story-main"><div class="prod-hero"><div class="prod-hero-bg"' + (b.cover ? ' style="background-image:url(\'' + esc(b.cover) + '\')"' : '') + '></div><div class="prod-hero-in"><img class="prod-hero-img" style="width:104px;height:140px;border-radius:18px' + (b.cover ? '' : ';display:none') + '" src="' + esc(b.cover || '') + '" alt="" /><div class="prod-hero-txt"><div style="font-size:.68rem;color:var(--accent-cyan);font-weight:800;letter-spacing:.08em;text-transform:uppercase">NexaGHOR Story</div><h2>' + esc(b.title || '') + '</h2>' + (b.author ? '<div style="font-size:.78rem;color:var(--text-muted);margin-bottom:7px">✍ ' + esc(b.author) + '</div>' : '') + '<div class="prod-hero-chips">' + chips + '</div></div></div></div>'
-            + '<div class="story-meta-grid"><div class="story-meta-box"><b>' + ss.length + '</b><span>সিজন</span></div><div class="story-meta-box"><b>' + eps.length + '</b><span>পর্ব</span></div><div class="story-meta-box"><b>' + esc(b.magazineCategory || 'General') + '</b><span>ক্যাটেগরি</span></div></div>'
-            + (b.description ? '<p style="font-size:.88rem;color:var(--text-muted);line-height:1.8;margin-bottom:4px">' + esc(b.description) + '</p>' : '') + '</div>'
-            + '<div class="sec-label">সিজন নির্বাচন <small>' + ss.length + 'টি সিজন</small></div><div class="ep-list">' + ss.map(function (n) { return '<div class="ep-row" data-sn="' + n + '"><div class="ep-num">' + n + '</div><div class="ep-info"><b>Season ' + n + '</b><small>' + m[n].length + 'টি পর্ব</small></div><i data-lucide="chevron-right"></i></div>'; }).join('') + '</div>';
-        }
-        function renderSeasonEps(q) {
-          var b = curBook(), sn = S.season, eps = bookEps().filter(function (e) { return (e.season || 1) == sn && (!q || matchEp(e, q)); });
-          return backBtn('sback', 'Back to Season') + '<div class="prod-hero"><div class="prod-hero-bg"' + (b.cover ? ' style="background-image:url(\'' + esc(b.cover) + '\')"' : '') + '></div><div class="prod-hero-in"><img class="prod-hero-img" style="width:70px;height:94px;border-radius:12px' + (b.cover ? '' : ';display:none') + '" src="' + esc(b.cover || '') + '" alt=""><div class="prod-hero-txt"><h2>' + esc(b.title || '') + '</h2><div style="color:var(--accent-cyan)">Season ' + sn + '</div></div></div></div>'
-            + '<div class="sec-label">পর্ব তালিকা <small>' + eps.length + 'টি পর্ব</small></div><div class="ep-list">' + (eps.length ? eps.map(function (e) {
-              var has = !!textOf(e);
-              return '<div class="ep-row' + (has ? '' : ' locked') + '" ' + (has ? 'data-eid="' + esc(e.id) + '"' : '') + '><div class="ep-num">' + (e.number || '•') + '</div><div class="ep-info"><b>' + hl(e.title || ('Episode ' + (e.number || '')), S.q) + '</b><small>পর্ব ' + (e.number || '-') + (has ? '' : ' · Offline save করা হয়নি') + '</small></div><i data-lucide="' + (has ? 'chevron-right' : 'lock') + '"></i></div>';
-            }).join('') : '<div class="nol-empty">কোনো episode মেলেনি।</div>') + '</div>';
-        }
-        function renderReader(q) {
-          var e = S.eps.find(function (x) { return x.id === S.ep; }); if (!e) { S.ep = null; return renderSeasonEps(q); }
-          var sn = e.season || 1, eps = bookEps().filter(function (x) { return (x.season || 1) == sn && textOf(x); }), i = eps.findIndex(function (x) { return x.id === e.id; }), raw = textOf(e), b = curBook();
-          var fs = 1.02; try { fs = parseFloat(localStorage.getItem('gghor_rfs') || '1.02') || 1.02; } catch (x) {}
-          var body = raw ? raw.split(/\n{2,}/).map(function (t) { return '<p>' + hl(t, S.q).replace(/\n/g, '<br>') + '</p>'; }).join('') : '<div style="text-align:center;color:var(--text-dim);">এই পর্বে এখনো কোনো লেখা নেই</div>';
-          return '<div class="reader"><div class="reader-topbar"><button type="button" class="btn btn-secondary btn-sm" data-act="eps"><i data-lucide="arrow-left"></i> Back to Episode</button><div class="reader-tools"><button type="button" class="btn btn-secondary btn-sm" data-act="fsm" aria-label="ছোট লেখা">A−</button><button type="button" class="btn btn-secondary btn-sm" data-act="fsp" aria-label="বড় লেখা">A+</button></div></div>'
-            + '<div class="reader-card"><div class="reader-heading"><div class="reader-kicker">' + esc(b.title || '') + '</div><h2 class="reader-title">' + esc(e.title || '') + '</h2><div class="reader-epno">পর্ব ' + (e.number || '-') + '</div></div><div class="reader-body" style="font-size:' + fs + 'rem">' + body + '</div></div>'
-            + '<div class="reader-nav"><button type="button" class="btn btn-secondary" data-act="prev"' + (i > 0 ? '' : ' disabled') + '><i data-lucide="chevron-left"></i> Previous</button><button type="button" class="btn btn-primary" data-act="next"' + (i > -1 && i < eps.length - 1 ? '' : ' disabled') + '>Next <i data-lucide="chevron-right"></i></button></div></div>';
-        }
-        function renderList() {
-          var el = $('nolList'); if (!el) return;
-          var box = $('nolDlBox'); if (box) box.hidden = S.tab !== 'dl'; el.hidden = S.tab === 'dl';
-          if (S.tab === 'dl') { el.innerHTML = ''; renderDl(); } else el.innerHTML = S.tab === 'video' ? renderVideos() : renderBooks();
-          counts(); storeLine(); var hm = $('nexaOfflineHome'); if (hm) hm.classList.toggle('nol-deep', S.tab === 'book' && !!(S.book || S.ep)); try { if (window.lucide) lucide.createIcons(); } catch (e) {}
-        }
-        function autoTab() { if (S.touched || S.q) return; S.tab = activeN() ? 'dl' : (S.videos.length ? 'video' : (libBooks().length ? 'book' : 'video')); }
-        function refresh() { return load().then(function () { if (S.fresh) { autoTab(); S.fresh = false; } renderList(); }).catch(function () { renderList(); }); }
-
-        function isOn() { var v = $('view-dlm'); return !!(v && v.classList.contains('active')); }
-        function qList() { if (window.app && Array.isArray(app._dlQueue)) return app._dlQueue; try { return JSON.parse(localStorage.getItem(QK) || '[]').filter(Boolean); } catch (e) { return []; } }
-        function activeN() { return qList().filter(function (x) { return x.state !== 'done'; }).length; }
-        function renderDl() {
-          var list = $('nexaDlList'); if (!list) return;
-          if (window.app && app.renderDlQueue) { var cb = $('nexaDlDev'); if (cb && app._dlDevCopy) cb.checked = app._dlDevCopy(); app.renderDlQueue(true); return; }
-          var q = lc(S.q).trim(), L = qList().filter(function (x) { return !q || lc(x.title).indexOf(q) > -1; });
-          list.innerHTML = L.length ? L.map(function (x) {
-            var pct = x.state === 'done' ? 100 : (x.isHls ? (x.segTotal ? x.segDone / x.segTotal * 100 : 0) : (x.total ? x.bytes / x.total * 100 : 0));
-            var th = x.thumb ? '<img class="' + (x.adult ? 'blur' : '') + '" src="' + esc(x.thumb) + '" alt="" onerror="this.remove()">' : '🎬';
-            return '<div class="nexa-dl-item"><div class="nexa-dl-item-head"><div class="nexa-dl-th">' + th + '</div><div class="nexa-dl-title">' + esc(x.title) + '<div class="nexa-dl-meta"><span>' + esc(x.kind) + '</span><span>' + size(x.bytes) + '</span></div></div><span class="nexa-dl-status st-' + esc(x.state) + '">' + (x.state === 'done' ? '100% সম্পন্ন' : Math.floor(pct) + '%') + '</span></div><div class="nexa-dl-progress ' + (x.state === 'done' ? 'ok' : '') + '"><i style="width:' + pct.toFixed(1) + '%"></i></div><div class="nexa-dl-time">Internet ফিরলে Download Manager থেকে Resume করুন</div></div>';
-          }).join('') : '<div class="nexa-dl-empty">কোনো video download queue-তে নেই</div>';
-        }
-        function onQ() { if (S.tab === 'dl') { if (window.app && app.dlSearch) app.dlSearch(S.q); else renderDl(); } else renderList(); }
-        function show() {
-          document.querySelectorAll('.view-page').forEach(function (p) { p.classList.remove('active'); });
-          var v = $('view-dlm'); if (v) v.classList.add('active');
-          document.querySelectorAll('.nav-btn').forEach(function (b) { b.classList.toggle('active', b.id === 'navDlm'); });
-          try { window.scrollTo(0, 0); } catch (e) {}
-        }
-        function enter(tab) {
-          var h = $('nexaOfflineHome'); if (!h) return; bind();
-          var t = tab || S.pending; S.pending = null;
-          if (t) { S.tab = t; S.touched = true; S.fresh = false; } else { S.touched = false; S.fresh = true; }
-          S.book = null; S.season = null; S.ep = null;
-          var fs = 1; try { fs = Number(localStorage.getItem('gghor_nol_fs')) || 1; } catch (e) {} h.style.setProperty('--nol-fs', (0.95 * fs).toFixed(2) + 'rem');
-          return refresh();
-        }
-        function open(tab) {
-          S.pending = tab || null;
-          if (window.app && typeof app.navigate === 'function' && app.currentView !== undefined) { try { app.navigate('dlm'); return; } catch (e) {} }
-          show(); return enter(tab);
-        }
-        function close() {
-          if (window.app && typeof app.navigate === 'function') { app.navigate('home'); return; }
-          document.querySelectorAll('.view-page').forEach(function (p) { p.classList.remove('active'); }); var hv = $('view-home'); if (hv) hv.classList.add('active');
-        }
-        function setTab(t) { S.tab = t; S.touched = true; S.book = null; S.season = null; S.ep = null; renderList(); var l = $('nolList'); if (l) l.scrollTop = 0; }
-
-        /* ---- full-screen player ---- */
-        function pv(on) {
-          var sec = $('view-nolplay'), dl = $('view-dlm'); if (!sec) return;
-          if (on) { document.querySelectorAll('.view-page').forEach(function (x) { x.classList.remove('active'); }); sec.classList.add('active'); document.body.classList.add('nol-playing'); try { window.scrollTo(0, 0); } catch (e) {} }
-          else if (sec.classList.contains('active')) { document.body.classList.remove('nol-playing'); sec.classList.remove('active'); if (dl) dl.classList.add('active'); try { window.scrollTo(0, 0); } catch (e) {} }
-        }
-        function isFs() { return document.fullscreenElement || document.webkitFullscreenElement; }
-        function lockLand() { try { if (screen.orientation && screen.orientation.lock) { var p = screen.orientation.lock('landscape'); if (p && p.catch) p.catch(noop); } } catch (e) {} }
-        function vfs(v) { try { if (v.webkitEnterFullscreen) v.webkitEnterFullscreen(); else if (v.requestFullscreen) { var r = v.requestFullscreen(); if (r && r.catch) r.catch(noop); } } catch (e) {} }
-        function enterFs() {
-          var p = $('nolPlayer'), v = $('nolVideo'), f = p.requestFullscreen || p.webkitRequestFullscreen;
-          if (!f) { vfs(v); return; }
-          try { var r = f.call(p); if (r && r.then) r.then(lockLand, function () { vfs(v); }); else lockLand(); } catch (e) { vfs(v); }
-        }
-        function exitFs() {
-          try { if (isFs()) { var f = document.exitFullscreen || document.webkitExitFullscreen, r = f && f.call(document); if (r && r.catch) r.catch(noop); } if (screen.orientation && screen.orientation.unlock) screen.orientation.unlock(); } catch (e) {}
-        }
-        function fsLabel() { var b = $('nolFs'); if (b) b.textContent = isFs() ? '⤢ Exit Full Screen' : '⛶ Full Screen'; if (!isFs()) { try { if (screen.orientation && screen.orientation.unlock) screen.orientation.unlock(); } catch (e) {} } }
-        function barShow() {
-          var b = $('nolPBar'), v = $('nolVideo'); if (!b) return; b.classList.remove('hide'); clearTimeout(S.bt);
-          S.bt = setTimeout(function () { if (v && !v.paused) b.classList.add('hide'); }, 3000);
-        }
-        function play(id) {
-          var P = $('nolPlayer'), v = $('nolVideo'); if (!P || !v) return;
-          closePlayer(true);
-          P.classList.add('open'); P.scrollTop = 0; pv(true); $('nolPT').textContent = 'Loading…'; barShow(); enterFs();
-          if (!S.pushed) { try { history.pushState({ nolp: 1 }, ''); S.pushed = true; } catch (e) {} }
-          one('videos', id).then(function (row) {
-            if (!row || !row.blob) { toast('Offline video পাওয়া যাচ্ছে না', 'danger'); closePlayer(); return; }
-            S.cur = id; $('nolPT').textContent = row.title || 'Offline Video';
-            S.url = URL.createObjectURL(row.blob); v.src = S.url;
-            var pos = 0; try { pos = Number(localStorage.getItem(PK + id)) || 0; } catch (e) {}
-            v.onloadedmetadata = function () {
-              if (pos > 5 && v.duration && pos < v.duration - 8) { try { v.currentTime = pos; } catch (e) {} }
-              if (v.duration && row.duration !== v.duration) { row.duration = v.duration; openDb().then(function (d) { d.transaction('videos', 'readwrite').objectStore('videos').put(row); }).catch(noop); }
-            };
-            var last = 0;
-            v.ontimeupdate = function () { var n = Date.now(); if (n - last > 4000) { last = n; try { localStorage.setItem(PK + id, String(Math.floor(v.currentTime))); } catch (e) {} } };
-            v.onended = function () { try { localStorage.removeItem(PK + id); } catch (e) {} barShow(); };
-            v.onpause = function () { var b = $('nolPBar'); if (b) b.classList.remove('hide'); };
-            v.onplay = barShow;
-            v.onclick = function () { var b = $('nolPBar'); if (b) b.classList.toggle('hide'); };
-            v.onerror = function () { toast('এই ভিডিও এই browser-এ চালানো যাচ্ছে না। ⬇ বাটনে device-এ সেভ করে অন্য player-এ চালান।', 'danger'); };
-            var pr = v.play(); if (pr && pr.catch) pr.catch(noop);
-          }).catch(function () { toast('Offline video চালানো যাচ্ছে না', 'danger'); closePlayer(); });
-        }
-        function closePlayer(keepFs) {
-          var P = $('nolPlayer'), v = $('nolVideo');
-          if (v) { try { if (S.cur && v.currentTime > 5 && v.duration && v.currentTime < v.duration - 8) localStorage.setItem(PK + S.cur, String(Math.floor(v.currentTime))); } catch (e) {} v.onended = v.ontimeupdate = v.onloadedmetadata = v.onerror = v.onpause = v.onplay = v.onclick = null; v.pause(); v.removeAttribute('src'); v.load(); }
-          if (P) { P.classList.remove('open'); P.classList.remove('nol-rot'); } if (!keepFs) pv(false);
-          if (S.url) { URL.revokeObjectURL(S.url); S.url = null; }
-          S.cur = null; clearTimeout(S.bt); if (!keepFs) exitFs();
-          if (!keepFs && S.pushed) { S.pushed = false; S.popIgnore = 1; try { history.back(); } catch (e) { S.popIgnore = 0; } }
-          if (isOn() && S.tab === 'video' && !keepFs) renderList();
-        }
-        function popupPlayer() {
-          var source = $('nolVideo'); if (!source || !source.src || source.readyState < 1) { toast('Offline video এখনো প্রস্তুত নয়', 'info'); return; }
-          var old = $('nolPopupLayer'); if (old) { closePopupPlayer(); return; }
-          var layer = document.createElement('div'); layer.id = 'nolPopupLayer'; layer.className = 'nol-popup-layer';
-          var w = document.createElement('div'); w.className = 'nol-popup-window'; w.innerHTML = '<div class="nol-popup-head"><b>' + (String($('nolPT').textContent || 'Offline Video').replace(/[<>&"']/g, '')) + '</b><button type="button" aria-label="Close popup" onclick="window.__nexaLib.closePopupPlayer()">×</button></div>';
-          var v = source.cloneNode(true); v.removeAttribute('id'); v.controls = true; v.autoplay = true; v.src = source.src; w.appendChild(v); layer.appendChild(w); document.body.appendChild(layer);
-          S.popupVideo = v; v.currentTime = source.currentTime || 0; v.play().catch(noop); if (window.GPX) window.GPX.attach(w);
-          var h = w.querySelector('.nol-popup-head'), down = false, sx = 0, sy = 0, ox = 0, oy = 0;
-          h.addEventListener('pointerdown', function (e) { if (e.target.closest('button')) return; down = true; sx = e.clientX; sy = e.clientY; var r = w.getBoundingClientRect(); ox = r.left; oy = r.top; h.setPointerCapture && h.setPointerCapture(e.pointerId); });
-          h.addEventListener('pointermove', function (e) { if (!down) return; var r = w.getBoundingClientRect(); w.style.left = Math.max(4, Math.min(innerWidth - r.width - 4, ox + e.clientX - sx)) + 'px'; w.style.top = Math.max(4, Math.min(innerHeight - r.height - 4, oy + e.clientY - sy)) + 'px'; w.style.right = 'auto'; w.style.bottom = 'auto'; });
-          var end = function () { down = false; savePopupPos(w); }; h.addEventListener('pointerup', end); h.addEventListener('pointercancel', end);
-          v.addEventListener('click', function () { if (w._gpxSkipClick) { w._gpxSkipClick = false; return; } w.classList.toggle('controls-hidden'); });
-          try { var p = JSON.parse(localStorage.getItem('gghor_tv_popup') || 'null'); if (p) { if (p.w) w.style.width = p.w + 'px'; if (p.h) w.style.height = p.h + 'px'; if (isFinite(p.x)) { w.style.left = p.x + 'px'; w.style.right = 'auto'; } if (isFinite(p.y)) { w.style.top = p.y + 'px'; w.style.bottom = 'auto'; } } } catch (e) {}
-          if (window.ResizeObserver) new ResizeObserver(function () { savePopupPos(w); }).observe(w);
-        }
-        function savePopupPos(w) { var r = w.getBoundingClientRect(); try { localStorage.setItem('gghor_tv_popup', JSON.stringify({ x: r.left, y: r.top, w: r.width, h: r.height })); } catch (e) {} }
-        function closePopupPlayer() { var l = $('nolPopupLayer'); if (l) l.remove(); if (S.popupVideo) { S.popupVideo.pause(); S.popupVideo.removeAttribute('src'); S.popupVideo = null; } }
-        function toggleFs() { if (isFs()) exitFs(); else enterFs(); }
-        function rotate(again) {
-          var P = $('nolPlayer'); if (!P) return;
-          if (!isFs() && !again) { enterFs(); setTimeout(function () { rotate(true); }, 400); return; }
-          var rotated = P.classList.contains('nol-rot'), landNow = rotated || window.innerWidth > window.innerHeight, target = landNow ? 'portrait' : 'landscape';
-          var css = function () {
-            var portraitVp = window.innerHeight > window.innerWidth;
-            if (rotated) P.classList.remove('nol-rot');
-            else if (target === 'landscape' && portraitVp) P.classList.add('nol-rot');
-            else toast('ফোনটি সোজা করে ধরুন', 'info');
-          };
-          if (isFs() && screen.orientation && screen.orientation.lock) { try { var r = screen.orientation.lock(target); if (r && r.then) r.then(function () { P.classList.remove('nol-rot'); }, css); else css(); } catch (e) { css(); } } else css();
-        }
-
-        /* ---- actions ---- */
-        function saveToDevice(id) {
-          one('videos', id).then(function (row) {
-            if (!row || !row.blob) return;
-            var u = URL.createObjectURL(row.blob), a = document.createElement('a'), name = String(row.title || 'video').replace(/[\\/:*?"<>|]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120) + '.' + (row.ext || 'mp4');
-            a.href = u; a.download = name; a.style.position = 'fixed'; a.style.left = '-9999px'; document.body.appendChild(a); a.click();
-            setTimeout(function () { URL.revokeObjectURL(u); a.remove(); }, 120000);
-          }).catch(noop);
-        }
-        function removeVideo(id) {
-          if (!confirm('এই Offline Video মুছে ফেলবেন?')) return;
-          var done = function () {
-            try { localStorage.removeItem(PK + id); } catch (e) {}
-            S.videos = S.videos.filter(function (v) { return v.id !== id; }); renderList();
-          };
-          if (window.app && app.deleteDownload && (app._dlQueue || []).some(function (x) { return x.id === id; })) { Promise.resolve(app.deleteDownload(id, true)).then(done, done); return; }
-          openDb().then(function (d) { return new Promise(function (ok, no) { var t = d.transaction('videos', 'readwrite'); t.objectStore('videos').delete(id); t.oncomplete = ok; t.onerror = function () { no(t.error); }; }); }).then(function () {
-            try { var qq = JSON.parse(localStorage.getItem(QK) || '[]').filter(function (x) { return x && x.id !== id; }); localStorage.setItem(QK, JSON.stringify(qq)); } catch (e) {}
-            done();
-          }).catch(function () { toast('মুছতে ব্যর্থ', 'danger'); });
-        }
-        function bumpFont(d) {
-          var v = 1.02; try { v = parseFloat(localStorage.getItem('gghor_rfs') || '1.02') || 1.02; } catch (e) {}
-          v = Math.min(1.6, Math.max(0.85, +(v + d * 0.1).toFixed(2))); try { localStorage.setItem('gghor_rfs', String(v)); } catch (e) {}
-          var rb = document.querySelector('#nexaOfflineHome .reader-body'); if (rb) rb.style.fontSize = v + 'rem';
-        }
-        function step(dir) {
-          var cur = S.eps.find(function (x) { return x.id === S.ep; }); if (!cur) return;
-          var eps = bookEps().filter(function (x) { return (x.season || 1) == (cur.season || 1) && textOf(x); }), i = eps.findIndex(function (x) { return x.id === S.ep; }), n = eps[i + dir];
-          if (n) { S.ep = n.id; renderList(); window.scrollTo(0, 0); var l = $('nolList'); if (l) l.scrollTop = 0; }
-        }
-
-        function bind() {
-          var home = $('nexaOfflineHome'), pl = $('nolPlayer'); if (!home || home._b) return; home._b = 1;
-          home.addEventListener('click', function (ev) {
-            var t = ev.target;
-            var n = t.closest && t.closest('[data-nol]');
-            if (n) { var k = n.getAttribute('data-nol'); if (k === 'close') close(); else if (k === 'tab-video') setTab('video'); else if (k === 'tab-book') setTab('book'); else if (k === 'tab-dl') setTab('dl'); else if (k === 'clear') { S.q = ''; $('nolQ').value = ''; renderList(); } return; }
-            var a = t.closest && t.closest('[data-act]'), row = t.closest && t.closest('[data-id]');
-            if (a) {
-              var act = a.getAttribute('data-act'), id = row && row.getAttribute('data-id');
-              if (act === 'play' || act === 'fs') play(id); else if (act === 'save') saveToDevice(id); else if (act === 'del') removeVideo(id);
-              else if (act === 'back') { S.book = null; S.season = null; renderList(); } else if (act === 'sback') { S.season = null; renderList(); } else if (act === 'eps') { S.ep = null; renderList(); window.scrollTo(0, 0); }
-              else if (act === 'fsm') bumpFont(-1); else if (act === 'fsp') bumpFont(1); else if (act === 'prev') step(-1); else if (act === 'next') step(1);
-              return;
-            }
-            var b = t.closest && t.closest('[data-bid]'); if (b) { S.book = b.getAttribute('data-bid'); S.season = null; renderList(); window.scrollTo(0, 0); var l = $('nolList'); if (l) l.scrollTop = 0; return; }
-            var sn = t.closest && t.closest('[data-sn]'); if (sn) { S.season = Number(sn.getAttribute('data-sn')); renderList(); window.scrollTo(0, 0); return; }
-            var e = t.closest && t.closest('[data-eid]'); if (e) { S.ep = e.getAttribute('data-eid'); renderList(); window.scrollTo(0, 0); var l2 = $('nolList'); if (l2) l2.scrollTop = 0; }
-          });
-          var qi = $('nolQ'), tm; qi.addEventListener('input', function () { S.q = qi.value; clearTimeout(tm); tm = setTimeout(onQ, 160); var x = $('nolQx'); if (x) x.hidden = !S.q; });
-          $('nolSort').addEventListener('change', function (e) { S.sort = e.target.value; renderList(); });
-          pl.addEventListener('click', function (ev) { var n = ev.target.closest && ev.target.closest('[data-nol]'); if (!n) return; var k = n.getAttribute('data-nol'); if (k === 'fs') toggleFs(); else if (k === 'rot') rotate(); else if (k === 'popup') popupPlayer(); else if (k === 'pclose') closePlayer(); });
-          ['pointermove', 'pointerdown', 'touchstart'].forEach(function (n) { pl.addEventListener(n, barShow, { passive: true }); });
-          $('nolVideo').addEventListener('dblclick', toggleFs); if (window.GPX) window.GPX.attach($('nolStage') || pl);
-          (function () { var sec = $('view-nolplay'); if (sec && window.MutationObserver) new MutationObserver(function () { if (!sec.classList.contains('active')) document.body.classList.remove('nol-playing'); if (pl.classList.contains('open') && !sec.classList.contains('active')) { S.pushed = false; closePlayer(); } }).observe(sec, { attributes: true, attributeFilter: ['class'] }); })();
-          window.addEventListener('popstate', function () { if (S.popIgnore) { S.popIgnore = 0; return; } if (pl.classList.contains('open')) { S.pushed = false; closePlayer(); } });
-          document.addEventListener('fullscreenchange', fsLabel); document.addEventListener('webkitfullscreenchange', fsLabel);
-          document.addEventListener('keydown', function (e) {
-            if (!pl.classList.contains('open')) return;
-            if (e.key === 'f' || e.key === 'F') { e.preventDefault(); toggleFs(); } else if (e.key === 'Escape' && !isFs()) closePlayer();
-          });
-        }
-        window.__nexaLib = { open: open, close: close, enter: enter, show: show, play: play, closePlayer: closePlayer, closePopupPlayer: closePopupPlayer, refresh: function () { if (isOn()) return refresh(); }, counts: counts, fs: toggleFs, rotate: rotate };
-        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bind); else bind();
       })();
     </script>
     <section id="view-history" class="view-page">
@@ -2152,7 +1673,6 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
     <button class="nav-btn active" onclick="app.navigate('home')"><i data-lucide="home"></i><span>হোম</span></button>
     <button class="nav-btn" onclick="app.navigate('magazine')"><i data-lucide="book-open"></i><span>ম্যাগাজিন</span></button>
     <button class="nav-btn" onclick="app.navigate('tv')"><i data-lucide="tv"></i><span>Entertainment</span></button>
-    <button type="button" class="nav-btn nav-dlm" id="navDlm" onclick="window.__nexaLib&&__nexaLib.open()"><svg class="nav-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download Manager</span><span class="nav-dl-n" id="navDlN"></span></button>
     <button class="nav-btn" onclick="app.navigate('orders')"><i data-lucide="package"></i><span>অর্ডার</span><span class="nav-badge-dot" id="navBadgeOrders"></span></button>
     <button class="nav-btn" onclick="app.navigate('wallet')"><i data-lucide="wallet"></i><span>ওয়ালেট</span></button>
     <button class="nav-btn" onclick="app.navigate('account')"><i data-lucide="user"></i><span>প্রোফাইল</span></button>
@@ -2356,7 +1876,6 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
   <script>
 (function () {
   var D = {
-    'Internet ছাড়াও কাজ করে — ডাউনলোড করা সব ভিডিও ও Magazine এখানে থাকবে।':'Works without internet — all downloaded videos and magazines are kept here.','ডাউনলোড করা ভিডিও':'Downloaded videos are saved in the','ফোল্ডারে সংরক্ষিত হয়। Pause করলে বা Internet গেলে progress হারায় না — আবার চালু করলে যেখান থেকে থেমেছিল সেখান থেকে চলবে।':'folder. Pausing or losing internet keeps your progress — resume to continue from where it stopped.','শেষ হলে device-এর Downloads folder-এও কপি সেভ করুন':'Also save a copy to the device Downloads folder when finished','কোনো video download queue-তে নেই':'No video downloads in the queue','কিছু মেলেনি':'No matches','Internet ফিরলে Download Manager থেকে Resume করুন':'Resume from Download Manager when internet is back','ডাউনলোড শুরু হয়েছে — নিচের Download Manager ট্যাবে দেখুন':'Download started — see the Download Manager tab below','Internet নেই — Download Manager-এ Offline Video ও Magazine পাবেন':'No internet — find your offline videos and magazines in Download Manager','ভিডিওটি আগেই ডাউনলোড করা আছে — Download Manager থেকে চালান':'Already downloaded — play it from Download Manager','ভিডিওটি ইতিমধ্যে Download Manager-এ আছে':'This video is already in Download Manager','ফোনটি সোজা করে ধরুন':'Hold the phone upright','কোনো Offline Video নেই।':'No offline videos yet.','Entertainment থেকে ভিডিও Download করলে এখানে জমা হবে।':'Videos you download from Entertainment will appear here.','কোনো ভিডিও মেলেনি।':'No videos found.','অন্য শব্দ দিয়ে খুঁজুন।':'Try a different word.','কোনো Offline Book নেই।':'No offline books yet.','বাটনে চাপুন।':'button.','100% সম্পন্ন':'100% complete',
     'এই অংশটি শুধুমাত্র ১৮+ বয়সীদের জন্য। আপনার বয়স কি ১৮ বছর বা তার বেশি?':'This section is only for users aged 18+. Are you 18 years or older?','১৮+ অংশ দেখতে লগইন করুন':'Please log in to view the 18+ section','কোনো ১৮+ বই বা গল্প পাওয়া যায়নি':'No 18+ books or stories found','১৮+ বই / গল্প খুঁজুন...':'Search 18+ books / stories...','বই / গল্পের নাম *':'Book / story name *','বিস্তারিত (ঐচ্ছিক)':'Details (optional)','রিকোয়েস্টের জন্য লগইন করুন':'Log in to send a request','রিকোয়েস্ট পাঠাতে লগইন করুন':'Log in to send a request','নামটি লিখুন':'Enter the name','রিকোয়েস্ট পাঠানো হয়েছে!':'Request sent!','রিকোয়েস্ট পাঠানো যায়নি':'Could not send the request',
     'নতুন বুক / গল্প':'New Books / Stories','বেশি পড়া বুক / গল্প':'Most Read Books / Stories','সকল বই ও গল্প':'All Books & Stories',
     'অ্যাকাউন্ট নেই?':'Don\'t have an account?','রেজিস্টার করুন':'Register',
@@ -2482,8 +2001,6 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
         this.bookReads = {}; this._readSeen = new Set(); this._subState = null; this._wbPos = null;
         this.curBookId = null; this.curEpId = null; this.curSeason = null; this._epText = {};
         this._reqSection = 'magazine';
-        this._dlQueue = []; this._dlWorkers = 0; this._dlMaxWorkers = 3; this._nexaDir = null; this._dlQueueKey = 'gghor_nexa_download_queue';
-        try { this._dlQueue = JSON.parse(localStorage.getItem(this._dlQueueKey) || '[]').filter(x => x).map(x => x.state === 'downloading' ? { ...x, state: 'queued', autoAt: Date.now() } : x).map(x => { delete x._running; return x; }); } catch (e) { this._dlQueue = []; }
       }
 
       /* ===== Favorites (প্রিয় পণ্য) ===== */
@@ -2546,13 +2063,8 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
         onAuthStateChanged(auth, u => this.handleAuthState(u));
         this._reduceMotion = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
         this.initBubble();
-        this.initDl();
         this.initPlayerGestures();
         this.initFloatBubbles();
-        this.restoreOfflineData();
-        this.renderDlQueue(); this.pumpDlQueue();
-        if (navigator.onLine === false) setTimeout(() => this.toast('Internet নেই — Download Manager-এ Offline Video ও Magazine পাবেন', 'info'), 600);
-        window.addEventListener('offline', () => this.toast('Internet নেই — Download Manager-এ Offline Video ও Magazine পাবেন', 'info'));
         setInterval(() => { if (this.currentUser) this.checkSubState(false); }, 15000);
         this.newExpiryWatch();
         window.addEventListener('resize', () => { clearTimeout(this._rz); this._rz = setTimeout(() => { this.wbApplyPos();  }, 200); });
@@ -2601,7 +2113,6 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
       listenPublicData() {
         onSnapshot(collection(db, 'books'), snap => {
           this.books = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-          this.cacheOfflineData('books', this.books);
           this.renderMagazine();
           if (['book', 'season', 'reader'].includes(this.currentView)) {
             const b = this.books.find(x => x.id === this.curBookId);
@@ -2611,7 +2122,6 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
         }, e => console.warn('books', e));
         onSnapshot(collection(db, 'book_episodes'), snap => {
           this.bookEps = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-          this.cacheOfflineData('book_episodes', this.bookEps);
           this.renderMagazine();
           if (this.currentView === 'book') this.renderEpisodes();
           if (this.currentView === 'season' && this.curSeason != null) this.renderSeasonEpisodes(this.curSeason);
@@ -3937,7 +3447,7 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
             </div>
             <div class="home-product-info">
               <h4 class="home-product-name">${this._esc(b.title)}</h4>
-              <div class="hp-foot"><span>${n}টি পর্ব</span>${lk ? '<span class="hp-from none">🔒 লক</span>' : `<button type="button" class="hp-from" onclick="app.cacheSingleBookOffline('${b.id}', event)">Offline Save</button>`}</div>
+              <div class="hp-foot"><span>${n}টি পর্ব</span>${lk ? '<span class="hp-from none">🔒 লক</span>' : ''}</div>
             </div>
           </div>`;
         };
@@ -3996,10 +3506,7 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
           const key = epId + '|' + (ep.updatedAt || '');
           let t = this._epText[key];
           if (t === undefined) {
-            if (navigator.onLine === false) { const cached = await this.getOfflineData('book_texts') || {}; this._epText = { ...cached, ...this._epText }; t = this._epText[key] || this._epText[epId] || ''; }
-            else { const snap = await getDoc(doc(db, 'book_texts', epId)); t = snap.exists() ? (snap.data().content || '') : ''; }
             this._epText[key] = t;
-            this.cacheOfflineData('book_texts', this._epText);
           }
           if (this.curEpId !== epId) return;
           body.innerHTML = t ? this._esc(t).split(/\n{2,}/).map(x => `<p>${x.replace(/\n/g, '<br>')}</p>`).join('') : '<div style="text-align:center; color:var(--text-dim);">এই পর্বে এখনো কোনো লেখা নেই</div>';
@@ -4173,7 +3680,6 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
         if (p.side === 'l') { w.style.left = '8px'; w.style.right = 'auto'; } else { w.style.right = '8px'; w.style.left = 'auto'; }
       }
       updateFloatBubbles() {
-        if (this.updateDlBadge) this.updateDlBadge();
         if (!this._fbDefs) return;
         Object.keys(this._fbDefs).forEach(id => {
           const w = document.getElementById(id); if (w) w.hidden = !this._fbDefs[id].views.includes(this.currentView);
@@ -4238,7 +3744,7 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
       }
       updateBubble() {
         const w = document.getElementById('walletBubble'); if (!w) return;
-        const show = !!this.currentUser && !['season', 'reader', 'aseason', 'areader', 'dlm'].includes(this.currentView);
+        const show = !!this.currentUser && !['season', 'reader', 'aseason', 'areader'].includes(this.currentView);
         w.hidden = !show;
         if (!show) { w.classList.remove('open'); return; }
         const bdt = this.formatMoney(this.wallets.BDT || 0, 'BDT'), usd = this.formatMoney(this.wallets.USD || 0, 'USD');
@@ -4282,201 +3788,47 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
       tvRefresh() { if (this.currentView === 'tv') this.renderTv(); else if (this.currentView === 'tvcat') this.renderTvCat(); else if (this.currentView === 'anime') this.renderAnime(); else if (this.currentView === 'tvmore') this.renderTvMore(); else if (this.currentView === 'tvplat') this.renderTvPlat(); else if (this.currentView === 'tvsc') this.renderTvSc(); }
       /* ===== Anime & Cartoon: tv_* এর সাথে একই প্লেয়ার/সিজন/এপিসোড সিস্টেম ব্যবহার করে ===== */
       /* ===== v23: Download (Episode / Movie) ===== */
-      _dlPersist() { try { localStorage.setItem(this._dlQueueKey, JSON.stringify(this._dlQueue.map(x => { const o = { ...x }; ['ac', '_sp', '_lb', '_lt', '_stop', '_stall', '_running', 'runAt'].forEach(k => delete o[k]); return o; }))); } catch (e) {} }
-      _dlSize(n) { n = Number(n) || 0; return n < 1024 ? n + ' B' : n < 1048576 ? (n / 1024).toFixed(0) + ' KB' : n < 1073741824 ? (n / 1048576).toFixed(1) + ' MB' : (n / 1073741824).toFixed(2) + ' GB'; }
-      _dlClock(ts) { try { return new Date(ts).toLocaleString('bn-BD', { dateStyle: 'short', timeStyle: 'short' }); } catch (e) { return ''; } }
-      _dlDur(ms) { const s = Math.max(0, Math.floor(ms / 1000)), h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(x).padStart(2, '0'); }
+      /* ===== Direct Download -> phone Downloads (NexaGHOR) ; কোনো Offline সেভ/Download Manager নেই ===== */
       _dlSafe(n) { return String(n || 'video').replace(/[\\/:*?"<>|]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120) || 'video'; }
-      _dlType(T, requested) { return requested === 'ep' || (requested === 'cur' && this._tvEpId && this._tvEpId !== 'main') ? 'Episode' : 'Movie'; }
-      _dlDevCopy() { try { return localStorage.getItem('gghor_dl_devcopy') !== '0'; } catch (e) { return true; } }
-      dlSetDevCopy(v) { try { localStorage.setItem('gghor_dl_devcopy', v ? '1' : '0'); } catch (e) {} }
-      _pdb() { if (this._pdbP) return this._pdbP; this._pdbP = new Promise((ok, no) => { const r = indexedDB.open('gghor_nexa_parts', 1); r.onupgradeneeded = () => { if (!r.result.objectStoreNames.contains('parts')) r.result.createObjectStore('parts'); }; r.onsuccess = () => ok(r.result); r.onerror = () => no(r.error); }); return this._pdbP; }
-      _pk(id, i) { return id + '|' + String(i).padStart(8, '0'); }
-      _prange(id) { return IDBKeyRange.bound(id + '|', id + '|￿'); }
-      async _pput(key, blob) { const d = await this._pdb(); return new Promise((res, rej) => { const t = d.transaction('parts', 'readwrite'); t.objectStore('parts').put(blob, key); t.oncomplete = res; t.onerror = () => rej(t.error); t.onabort = () => rej(t.error); }); }
-      async _pscan(id) { const d = await this._pdb(); return new Promise((res, rej) => { const out = [], r = d.transaction('parts').objectStore('parts').openCursor(this._prange(id)); r.onsuccess = () => { const c = r.result; if (c) { out.push({ k: c.key, size: c.value.size }); c.continue(); } else res(out); }; r.onerror = () => rej(r.error); }); }
-      async _pall(id) { const d = await this._pdb(); return new Promise((res, rej) => { const r = d.transaction('parts').objectStore('parts').getAll(this._prange(id)); r.onsuccess = () => res(r.result || []); r.onerror = () => rej(r.error); }); }
-      async _pdel(id) { try { const d = await this._pdb(); await new Promise(res => { const t = d.transaction('parts', 'readwrite'); t.objectStore('parts').delete(this._prange(id)); t.oncomplete = res; t.onerror = res; t.onabort = res; }); } catch (e) {} }
-      offlineDb() { if (this._offlineDbP) return this._offlineDbP; this._offlineDbP = new Promise((resolve, reject) => { const r = indexedDB.open('gghor_nexa_offline', 2); r.onupgradeneeded = () => { if (!r.result.objectStoreNames.contains('videos')) r.result.createObjectStore('videos', { keyPath: 'id' }); if (!r.result.objectStoreNames.contains('appdata')) r.result.createObjectStore('appdata', { keyPath: 'id' }); }; r.onsuccess = () => resolve(r.result); r.onerror = () => reject(r.error); }); return this._offlineDbP; }
-      async cacheOfflineData(id, data) { try { const dbx = await this.offlineDb(); await new Promise((res, rej) => { const t = dbx.transaction('appdata', 'readwrite'); t.objectStore('appdata').put({ id, data, savedAt: Date.now() }); t.oncomplete = res; t.onerror = () => rej(t.error); }); } catch (e) { console.warn('offline cache', id, e); } }
-      async getOfflineData(id) { try { const dbx = await this.offlineDb(); return await new Promise((res, rej) => { const r = dbx.transaction('appdata').objectStore('appdata').get(id); r.onsuccess = () => res(r.result && r.result.data); r.onerror = () => rej(r.error); }); } catch (e) { return null; } }
-      async restoreOfflineData() { const B = await this.getOfflineData('books'), E = await this.getOfflineData('book_episodes'), T = await this.getOfflineData('book_texts'); if (Array.isArray(B)) this.books = B; if (Array.isArray(E)) this.bookEps = E; if (T && typeof T === 'object') this._epText = { ...T, ...this._epText }; if (this.currentView === 'magazine') this.renderMagazine(); }
-      offlineBookEsc(x) { return this._esc(String(x == null ? '' : x)); }
-      openOfflineHome() { if (window.__nexaLib) window.__nexaLib.open(); }
-      closeOfflineHome() { if (window.__nexaLib) window.__nexaLib.close(); }
-      openOfflineVideos() { if (window.__nexaLib) window.__nexaLib.open('video'); }
-      openOfflineBooks() { if (window.__nexaLib) window.__nexaLib.open('book'); }
-      async cacheMagazineOffline() { if (navigator.onLine === false) { this.toast('Offline অবস্থায় নতুন Magazine save করা যাবে না', 'danger'); return; } const eps = (this.bookEps || []).filter(e => !this._episodeLocked(e)); if (!eps.length) { this.toast('Offline save করার মতো গল্প পাওয়া যায়নি', 'info'); return; } const T = { ...this._epText }; let done = 0; this.toast('Magazine offline save শুরু হয়েছে…', 'info'); for (const e of eps) { try { const snap = await getDoc(doc(db, 'book_texts', e.id)); T[e.id + '|' + (e.updatedAt || '')] = snap.exists() ? (snap.data().content || '') : ''; } catch (_) {} done++; if (done % 5 === 0 || done === eps.length) this.toast(`Offline save: ${done}/${eps.length}`, 'info'); } this._epText = T; await this.cacheOfflineData('books', this.books || []); await this.cacheOfflineData('book_episodes', this.bookEps || []); await this.cacheOfflineData('book_texts', T); this.toast('Magazine ও গল্প offline save সম্পন্ন', 'success'); }
-      async cacheSingleBookOffline(id, ev) { if (ev) { ev.preventDefault(); ev.stopPropagation(); } if (navigator.onLine === false) { this.toast('Offline অবস্থায় নতুন গল্প save করা যাবে না', 'danger'); return; } const b = this.books.find(x => x.id === id), eps = (this.bookEps || []).filter(e => e.bookId === id && !this._episodeLocked(e)); if (!b || !eps.length) { this.toast('এই গল্পের কোনো অনুমোদিত episode নেই', 'info'); return; } const T = { ...this._epText }; this.toast('এই গল্পটি offline save হচ্ছে…', 'info'); for (const e of eps) { try { const snap = await getDoc(doc(db, 'book_texts', e.id)); T[e.id + '|' + (e.updatedAt || '')] = snap.exists() ? (snap.data().content || '') : ''; } catch (_) {} } this._epText = T; await this.cacheOfflineData('books', this.books || []); await this.cacheOfflineData('book_episodes', this.bookEps || []); await this.cacheOfflineData('book_texts', T); this.toast('এই গল্পটি Offline Save হয়েছে', 'success'); }
-      async saveOfflineVideo(x, blob, ext) {
-        try {
-          const dbx = await this.offlineDb();
-          await new Promise((res, rej) => { const t = dbx.transaction('videos', 'readwrite'); t.objectStore('videos').put({ id: x.id, title: x.title, kind: x.kind, size: blob.size, mime: blob.type || ('video/' + ext), ext, blob, thumb: x.thumb || '', adult: !!x.adult, savedAt: Date.now() }); t.oncomplete = res; t.onerror = () => rej(t.error); t.onabort = () => rej(t.error); });
-          x.offlineReady = true; return true;
-        } catch (e) { console.warn('offline video storage', e); x.offlineReady = false; return false; }
+      _dlExt(url, ct) { const m = String(url).split('?')[0].match(/\.(mp4|webm|ogg|mov|m4v|mkv|avi)$/i); return m ? m[1].toLowerCase() : (/webm/i.test(ct) ? 'webm' : /ogg/i.test(ct) ? 'ogg' : /quicktime/i.test(ct) ? 'mov' : /matroska/i.test(ct) ? 'mkv' : 'mp4'); }
+      _dlUI() {
+        let p = document.getElementById('dlPanel'); if (!p) { p = document.createElement('div'); p.id = 'dlPanel'; p.className = 'dl-panel'; document.body.appendChild(p); }
+        const L = this._dlActive || []; p.classList.toggle('on', L.length > 0);
+        p.innerHTML = L.map(a => `<div class="dl-row"><b>${this.tvE(a.name)}</b><span>${a.pct || 0}%</span><button type="button" class="dl-x" onclick="app.dlCancel('${a.id}')">✕</button></div><div class="dl-bar"><i style="width:${a.pct || 0}%"></i></div>`).join('');
       }
-      offlinePlay(id) { if (window.__nexaLib) window.__nexaLib.play(id); }
-      closeOfflineVideo() { if (window.__nexaLib) window.__nexaLib.closePlayer(); }
-      async deleteOfflineVideo(id) { try { const dbx = await this.offlineDb(); await new Promise(res => { const t = dbx.transaction('videos', 'readwrite'); t.objectStore('videos').delete(id); t.oncomplete = res; t.onerror = res; t.onabort = res; }); } catch (e) {} try { localStorage.removeItem('gghor_nexa_pos_' + id); } catch (e) {} }
-      /* ===== NexaGHOR Download Manager (bottom tab, resumable, parallel) ===== */
-      initDl() {
-        const cb = document.getElementById('nexaDlDev'); if (cb) cb.checked = this._dlDevCopy();
-        window.addEventListener('online', () => this.pumpDlQueue());
-        this.updateDlBadge();
-      }
-      updateDlBadge() {
-        const q = this._dlQueue || [], active = q.filter(x => x.state !== 'done').length, busy = q.some(x => x.state === 'downloading');
-        const n = document.getElementById('navDlN'); if (n) { n.style.display = active ? 'grid' : 'none'; if (n.textContent !== String(active)) n.textContent = active; }
-        const b = document.getElementById('navDlm'); if (b) b.classList.toggle('busy', busy);
-        const c = document.getElementById('nolCD'); if (c && c.textContent !== String(active)) c.textContent = active;
-      }
-      _dlThumb(x, src) {
-        const run = async () => {
-          let out = '';
-          try {
-            if (typeof src === 'string' && src) {
-              let u = src, tmp = false;
-              if (!/^data:/i.test(u)) { const r = await fetch(u, { mode: 'cors' }); if (!r.ok) throw new Error('thumb'); u = URL.createObjectURL(await r.blob()); tmp = true; }
-              const img = await new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = u; });
-              const sc = Math.min(1, 360 / (img.naturalWidth || 360)), c = document.createElement('canvas');
-              c.width = Math.max(1, Math.round((img.naturalWidth || 360) * sc)); c.height = Math.max(1, Math.round((img.naturalHeight || 200) * sc));
-              c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
-              if (tmp) URL.revokeObjectURL(u);
-              out = c.toDataURL('image/jpeg', 0.75);
-            }
-          } catch (e) { out = (typeof src === 'string' && src.length < 600 && /^(https?:)?\/\//.test(src)) ? src : ''; }
-          x.thumb = out; this._dlPersist(); this.renderDlQueue(true);
-        };
-        this._thumbPs = this._thumbPs || {}; const p = run().catch(() => {}); this._thumbPs[x.id] = p; return p;
-      }
-      dlSearch(v) { this._dlFilter = String(v || '').trim().toLowerCase(); this.renderDlQueue(true); }
-      _dlPct(x) { if (x.state === 'done') return 100; if (x.isHls) return x.segTotal ? Math.min(99.9, x.segDone / x.segTotal * 100) : 0; return x.total ? Math.min(99.9, x.bytes / x.total * 100) : 0; }
-      _dlStatus(x) { return x.state === 'done' ? '100% সম্পন্ন' : x.state === 'paused' ? 'Paused' : x.state === 'error' ? 'ব্যর্থ' : x.state === 'queued' ? 'Queue' : ((x.isHls || x.total) ? Math.floor(this._dlPct(x)) + '%' : '…'); }
-      _dlSizeText(x) {
-        if (x.state === 'done') return this._dlSize(x.size || x.total || x.bytes);
-        const tot = x.total ? (x.isHls ? '~' : '') + this._dlSize(x.total) : '';
-        return x.bytes || tot ? (this._dlSize(x.bytes) + (tot ? ' / ' + tot : '')) : 'Size: গণনা চলছে…';
-      }
-      _dlElapsed(x) { return (x.elapsed || 0) + (x.runAt ? Date.now() - x.runAt : 0); }
-      _dlTimeText(x) {
-        const ck = t => this._dlClock(t);
-        if (x.state === 'queued') return '⏱ Auto Download: ' + (x.autoAt && x.autoAt > Date.now() ? ck(x.autoAt) + '-এ শুরু হবে' : 'Queue-তে — শীঘ্রই শুরু হবে') + (x.elapsed ? ' · আগে ' + this._dlDur(x.elapsed) : '');
-        if (x.state === 'done') return '⏱ শুরু ' + ck(x.startedAt || x.autoAt) + ' · শেষ ' + ck(x.finishedAt) + ' · সময় লেগেছে ' + this._dlDur(x.elapsed || 0);
-        let s = '⏱ শুরু ' + ck(x.startedAt || x.autoAt) + ' · চলেছে ' + this._dlDur(this._dlElapsed(x));
-        if (x.state === 'downloading') {
-          const left = x.total && x._sp > 1 ? (x.total - x.bytes) / x._sp * 1000 : 0;
-          if (left > 0) s += ' · বাকি ~' + this._dlDur(left);
-          if (x.note) s += ' · ' + x.note;
-        } else if (x.state === 'paused') s += ' · Paused';
-        return s;
-      }
-      _dlRow(x) {
-        const E = v => this.tvE(v), pct = this._dlPct(x), ind = x.state === 'downloading' && !x.isHls && !x.total;
-        const th = x.thumb ? `<img class="${x.adult ? 'blur' : ''}" src="${E(x.thumb)}" alt="" loading="lazy" onerror="this.remove()">` : (x.kind === 'Episode' ? '📺' : '🎬');
-        const btn = x.state === 'done'
-          ? `<button type="button" class="offline" onclick="app.offlinePlay('${x.id}')">▶ Play</button><button type="button" onclick="app.dlSaveDevice('${x.id}')">⬇ Save</button>`
-          : (x.state === 'paused' || x.state === 'error')
-            ? `<button type="button" onclick="app.resumeDownload('${x.id}')">${x.state === 'error' ? '↻ Retry' : '▶ Resume'}</button>`
-            : `<button type="button" onclick="app.pauseDownload('${x.id}')">⏸ Pause</button>`;
-        return `<div class="nexa-dl-item" data-dl="${x.id}"><div class="nexa-dl-item-head"><div class="nexa-dl-th">${th}</div><div class="nexa-dl-title">${E(x.title)}<div class="nexa-dl-meta"><span>${E(x.kind)}</span><span class="dl-size">${E(this._dlSizeText(x))}</span><span class="dl-speed" ${x.state === 'downloading' && x._sp ? '' : 'hidden'}>${x._sp ? this._dlSize(x._sp) + '/s' : ''}</span></div></div><span class="nexa-dl-status st-${x.state} dl-st">${this._dlStatus(x)}</span></div><div class="nexa-dl-progress ${x.state === 'done' ? 'ok' : ''} ${ind ? 'ind' : ''}"><i style="width:${pct.toFixed(1)}%"></i></div><div class="nexa-dl-time dl-time">${E(this._dlTimeText(x))}</div>${x.state === 'error' ? `<div class="nexa-dl-err">${E(x.error || 'Download failed')}</div>` : ''}${x.warn ? `<div class="nexa-dl-err">${E(x.warn)}</div>` : ''}<div class="nexa-dl-actions">${btn}<button type="button" class="danger" onclick="app.deleteDownload('${x.id}')">🗑 Delete</button></div></div>`;
-      }
-      renderDlQueue(full) {
-        const list = document.getElementById('nexaDlList'); this.updateDlBadge(); if (!list) return;
-        const bx = document.getElementById('nolDlBox'), open = this.currentView === 'dlm' && bx && !bx.hidden;
-        if (!full && !open) return;
-        if (!full) { this._dlUpdateRows(); return; }
-        const f = this._dlFilter, L = this._dlQueue.filter(x => !f || String(x.title).toLowerCase().includes(f) || String(x.kind).toLowerCase().includes(f));
-        if (!L.length) list.innerHTML = '<div class="nexa-dl-empty">' + (this._dlQueue.length ? 'কিছু মেলেনি' : 'কোনো video download queue-তে নেই') + '</div>';
-        else list.innerHTML = L.map(x => this._dlRow(x)).join('');
-      }
-      _dlUpdateRows() {
-        const list = document.getElementById('nexaDlList'); if (!list) return;
-        this._dlQueue.forEach(x => {
-          const row = list.querySelector('[data-dl="' + x.id + '"]'); if (!row) return;
-          const set = (sel, t) => { const e = row.querySelector(sel); if (e && e.textContent !== t) e.textContent = t; };
-          set('.dl-size', this._dlSizeText(x)); set('.dl-st', this._dlStatus(x)); set('.dl-time', this._dlTimeText(x));
-          const sp = row.querySelector('.dl-speed'); if (sp) { sp.hidden = !(x.state === 'downloading' && x._sp); sp.textContent = x._sp ? this._dlSize(x._sp) + '/s' : ''; }
-          const bar = row.querySelector('.nexa-dl-progress'); if (bar) { bar.classList.toggle('ind', x.state === 'downloading' && !x.isHls && !x.total); const i = bar.firstElementChild; if (i) i.style.width = this._dlPct(x).toFixed(1) + '%'; }
-        });
-      }
-      _dlTickStart() { if (this._dlTimer) return; this._dlTimer = setInterval(() => this._dlTick(), 600); }
-      _dlTick() {
-        const now = Date.now(); let any = false;
-        this._dlQueue.forEach(x => {
-          if (x.state === 'downloading') {
-            any = true; const s = (now - (x._lt || now)) / 1000;
-            if (s > 0.2) { const inst = Math.max(0, (x.bytes - (x._lb || 0)) / s); x._sp = x._sp ? x._sp * 0.65 + inst * 0.35 : inst; x._lb = x.bytes; x._lt = now; }
-          } else if (x.state === 'queued') any = true;
-        });
-        this._dlPT = (this._dlPT || 0) + 1;
-        if (!any) { clearInterval(this._dlTimer); this._dlTimer = null; }
-        else this.pumpDlQueue();
-        this.updateDlBadge(); this.renderDlQueue(false);
-        if (this._dlPT % 5 === 0 || !any) this._dlPersist();
-      }
+      dlCancel(id) { const x = (this._dlActive || []).find(a => a.id === id); if (x) { x.stop = true; try { x.ac.abort(); } catch (e) { } } }
       enqueueDownload(kind, id) {
         const T = this.tvDlTarget(kind, id), src = T && this.tvPickSrc(T.entry); if (!T || !src || !src.url) { this.toast('ডাউনলোড লিংক নেই', 'danger'); return; }
         const url = String(src.url).trim(); if (/(?:youtu\.be\/|youtube\.com\/)/i.test(url)) { this.toast('YouTube ভিডিও ডাউনলোড করা যায় না', 'danger'); return; }
-        const key = url + '|' + T.name, ex = this._dlQueue.find(x => x.key === key);
-        if (ex) { this.toast(ex.state === 'done' ? 'ভিডিওটি আগেই ডাউনলোড করা আছে — Download Manager থেকে চালান' : 'ভিডিওটি ইতিমধ্যে Download Manager-এ আছে', 'info'); return; }
-        const x = { id: 'dl_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7), key, title: 'NexaGHOR-' + T.name, name: this._dlSafe(T.name), kind: this._dlType(T, kind), url, src, itemId: T.it && T.it.id, thumb: '', adult: !!(T.it && T.it.ak === 'adult'), state: 'queued', pct: 0, bytes: 0, saved: 0, total: 0, segDone: 0, segTotal: 0, elapsed: 0, autoAt: Date.now(), isHls: /\.m3u8(?:\?|$)/i.test(url) };
-        this._dlQueue.unshift(x); this._dlPersist(); this.updateDlBadge(); this.toast('ডাউনলোড শুরু হয়েছে — নিচের Download Manager ট্যাবে দেখুন', 'success'); this.pumpDlQueue(); this._dlThumb(x, T.it && T.it.thumb);
+        this._dlActive = this._dlActive || [];
+        const name = 'NexaGHOR - ' + this._dlSafe(T.name);
+        if (this._dlActive.some(a => a.url === url && a.name === name)) { this.toast('ভিডিওটি ইতিমধ্যে ডাউনলোড হচ্ছে', 'info'); return; }
+        const x = { id: 'dl_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6), url, src, name, pct: 0, ac: new AbortController(), isHls: /\.m3u8(?:\?|$)/i.test(url) };
+        this._dlActive.push(x); this._dlUI(); this.toast('ডাউনলোড শুরু হয়েছে', 'success'); this._dlRun(x);
       }
-      pauseDownload(id) {
-        const x = this._dlQueue.find(a => a.id === id); if (!x || (x.state !== 'queued' && x.state !== 'downloading')) return;
-        if (x.state === 'downloading') { x._stop = 'pause'; if (x.ac) x.ac.abort(); } else { x.state = 'paused'; }
-        x.state = 'paused'; this._dlPersist(); this.renderDlQueue(true);
+      async _dlRun(x) {
+        try {
+          /* Android app/WebView থাকলে সরাসরি Download/NexaGHOR ফোল্ডারে পাঠায় */
+          const br = window.NexaGHORApp;
+          if (!x.isHls && br && typeof br.downloadFile === 'function') { br.downloadFile(x.url, x.name + '.' + this._dlExt(x.url, ''), 'Download/NexaGHOR'); this.toast('Download/NexaGHOR ফোল্ডারে সেভ হচ্ছে', 'success'); return; }
+          const blob = x.isHls ? await this._dlHls(x) : await this._dlPlain(x);
+          this.dlSave(blob, x.name + '.' + x.ext);
+          this.toast('ডাউনলোড সম্পন্ন — ফোনের Downloads ফোল্ডারে সেভ হয়েছে', 'success');
+        } catch (e) { if (!x.stop) this.toast('ডাউনলোড ব্যর্থ: ' + ((e && e.message) || ''), 'danger'); }
+        finally { this._dlActive = (this._dlActive || []).filter(a => a !== x); this._dlUI(); }
       }
-      resumeDownload(id) {
-        const x = this._dlQueue.find(a => a.id === id); if (!x || (x.state !== 'paused' && x.state !== 'error')) return;
-        x.state = 'queued'; x.error = ''; x.autoAt = Date.now(); this._dlPersist(); this.renderDlQueue(true); this.pumpDlQueue();
-      }
-      async deleteDownload(id, silent) {
-        const i = this._dlQueue.findIndex(a => a.id === id); if (i < 0) return;
-        const x = this._dlQueue[i]; x._stop = 'delete'; if (x.ac) x.ac.abort();
-        this._dlQueue.splice(i, 1); this._dlPersist(); this.renderDlQueue(true); this.pumpDlQueue();
-        await this.deleteOfflineVideo(id); await this._pdel(id);
-        if (window.__nexaLib) window.__nexaLib.refresh();
-      }
-      pauseAllDownloads() { this._dlQueue.filter(x => x.state === 'queued' || x.state === 'downloading').forEach(x => this.pauseDownload(x.id)); }
-      resumeAllDownloads() { this._dlQueue.filter(x => x.state === 'paused' || x.state === 'error').forEach(x => this.resumeDownload(x.id)); }
-      async clearFinishedDownloads() { const D = this._dlQueue.filter(x => x.state === 'done'); if (!D.length) { this.toast('Clear করার মতো সম্পন্ন ডাউনলোড নেই', 'info'); return; } if (!confirm(D.length + 'টি সম্পন্ন ডাউনলোড (Offline Video সহ) মুছে ফেলবেন?')) return; this._dlQueue = this._dlQueue.filter(x => x.state !== 'done'); this._dlPersist(); this.renderDlQueue(true); for (const x of D) await this.deleteOfflineVideo(x.id); if (window.__nexaLib) window.__nexaLib.refresh(); }
-      async dlSaveDevice(id) {
-        try { const dbx = await this.offlineDb(), row = await new Promise((res, rej) => { const r = dbx.transaction('videos').objectStore('videos').get(id); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); }); if (row && row.blob) this.dlSave(row.blob, this._dlSafe(row.title) + '.' + (row.ext || 'mp4')); else this.toast('Offline video পাওয়া যাচ্ছে না', 'danger'); } catch (e) { this.toast('Save ব্যর্থ', 'danger'); }
-      }
-      _dlWait(ms, x) { return new Promise(res => { const t0 = Date.now(), iv = setInterval(() => { if (x._stop || Date.now() - t0 >= ms) { clearInterval(iv); res(); } }, 200); }); }
-      _dlHttpErr(r) { const e = new Error('HTTP ' + r.status); if (r.status >= 400 && r.status < 500 && r.status !== 408 && r.status !== 429) e.fatal = true; return e; }
       async _dlPlain(x) {
-        const ac = x.ac, parts = await this._pscan(x.id); let saved = parts.reduce((a, b) => a + b.size, 0), idx = parts.length;
-        const go = from => fetch(x.url, { signal: ac.signal, cache: 'no-store', headers: from ? { Range: 'bytes=' + from + '-' } : undefined });
-        const reset = async () => { await this._pdel(x.id); saved = 0; idx = 0; };
-        let r = await go(saved), complete = false;
-        if (r.status === 416 && saved) complete = true;
-        else {
-          if (!r.ok) throw this._dlHttpErr(r);
-          const ct0 = r.headers.get('content-type') || ''; if (/text\/html/i.test(ct0)) { const e = new Error('এটি embed/পেজ লিংক — সরাসরি ভিডিও ফাইল নয়'); e.embed = true; e.fatal = true; throw e; }
-          if (saved && r.status !== 206) await reset();
-          else if (saved) { const m = /bytes\s+(\d+)-/i.exec(r.headers.get('content-range') || ''); if (m && Number(m[1]) !== saved) { try { ac.signal.aborted || r.body && r.body.cancel(); } catch (_) {} await reset(); r = await go(0); if (!r.ok) throw this._dlHttpErr(r); } }
-          const ct = r.headers.get('content-type') || '', cl = Number(r.headers.get('content-length')) || 0, cr = /\/(\d+)\s*$/.exec(r.headers.get('content-range') || '');
-          x.total = r.status === 206 ? (cr ? Number(cr[1]) : (cl ? saved + cl : 0)) : cl;
-          if (!x.ext) { const em = x.url.split('?')[0].match(/\.(mp4|webm|ogg|mov|m4v|mkv|avi)$/i); x.ext = em ? em[1].toLowerCase() : (/webm/i.test(ct) ? 'webm' : /ogg/i.test(ct) ? 'ogg' : /quicktime/i.test(ct) ? 'mov' : /matroska/i.test(ct) ? 'mkv' : 'mp4'); }
-          if (!x.mime) x.mime = /^video\//i.test(ct) ? ct.split(';')[0] : ({ mkv: 'video/x-matroska', mov: 'video/quicktime', webm: 'video/webm', ogg: 'video/ogg' }[x.ext] || 'video/mp4');
-          x.bytes = saved; x.note = '';
-          let buf = [], bl = 0, last = Date.now();
-          const flush = async () => { if (!buf.length) return; const b = new Blob(buf, { type: x.mime }), k = idx; buf = []; bl = 0; await this._pput(this._pk(x.id, k), b); idx++; saved += b.size; x.saved = saved; };
-          const wd = setInterval(() => { if (Date.now() - last > 30000) { x._stall = true; ac.abort(); } }, 4000);
-          try {
-            if (!r.body || !r.body.getReader) { buf.push(new Uint8Array(await r.arrayBuffer())); bl = buf[0].length; x.bytes = saved + bl; await flush(); }
-            else { const rd = r.body.getReader(); for (;;) { const z = await rd.read(); if (z.done) break; last = Date.now(); buf.push(z.value); bl += z.value.length; x.bytes = saved + bl; if (bl >= 4194304) await flush(); } }
-          } catch (e) { if (e && e.name === 'QuotaExceededError') { e.fatal = true; e.message = 'Device storage পূর্ণ'; } throw e; }
-          finally { clearInterval(wd); try { await flush(); } catch (_) {} }
-          x.bytes = saved;
-          if (x.total && saved < x.total) throw new Error('সংযোগ কেটে গেছে (' + this._dlSize(saved) + ' / ' + this._dlSize(x.total) + ')');
-        }
-        x.total = x.total || saved; x.bytes = saved;
+        const r = await fetch(x.url, { signal: x.ac.signal }); if (!r.ok) throw new Error('HTTP ' + r.status);
+        const ct = r.headers.get('content-type') || ''; if (/text\/html/i.test(ct)) throw new Error('এটি সরাসরি ভিডিও ফাইল নয়');
+        x.ext = this._dlExt(x.url, ct); const total = Number(r.headers.get('content-length')) || 0, mime = /^video\//i.test(ct) ? ct.split(';')[0] : 'video/mp4';
+        if (!r.body || !r.body.getReader) return new Blob([await r.arrayBuffer()], { type: mime });
+        const rd = r.body.getReader(), buf = []; let got = 0, t = 0;
+        for (;;) { const z = await rd.read(); if (z.done) break; buf.push(z.value); got += z.value.length; x.pct = total ? Math.min(99, Math.floor(got / total * 100)) : 0; if (Date.now() - t > 300) { t = Date.now(); this._dlUI(); } }
+        return new Blob(buf, { type: mime });
       }
       async _dlHls(x) {
-        const ac = x.ac, get = async u => { const r = await fetch(u, { signal: ac.signal }); if (!r.ok) throw this._dlHttpErr(r); return r; }, abs = (u, b) => new URL(u, b).href, fatal = m => { const e = new Error(m); e.fatal = true; return e; };
+        const ac = x.ac, fatal = m => { const e = new Error(m); e.fatal = true; return e; }, abs = (u, b) => new URL(u, b).href;
+        const get = async u => { const r = await fetch(u, { signal: ac.signal }); if (!r.ok) { const e = new Error('HTTP ' + r.status); if (r.status >= 400 && r.status < 500) e.fatal = true; throw e; } return r; };
         let pl = await (await get(x.url)).text(), base = x.url;
         if (/#EXT-X-STREAM-INF/.test(pl)) {
           const L = pl.split(/\r?\n/), vs = [];
@@ -4500,75 +3852,23 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
           else if (t && !t.startsWith('#')) segs.push({ u: abs(t, base), key, seq: seq++ });
         }
         if (!segs.length) throw fatal('সেগমেন্ট পাওয়া যায়নি');
-        x.ext = map ? 'mp4' : 'ts'; x.mime = map ? 'video/mp4' : 'video/mp2t'; x.segTotal = segs.length; x.note = '';
-        const have = new Set((await this._pscan(x.id)).map(e => Number(e.k.split('|')[1])));
-        const size0 = (await this._pall(x.id)).reduce((a, b) => a + b.size, 0);
-        x.segDone = segs.reduce((a, _, k) => a + (have.has(k + 1) ? 1 : 0), 0); x.bytes = size0;
-        const keys = {}, getKey = async k => { if (!keys[k.u]) keys[k.u] = (async () => { const buf = await (await get(k.u)).arrayBuffer(); return crypto.subtle.importKey('raw', buf, 'AES-CBC', false, ['decrypt']); })(); try { return await keys[k.u]; } catch (e) { delete keys[k.u]; throw e; } };
+        x.ext = map ? 'mp4' : 'ts'; const mime = map ? 'video/mp4' : 'video/mp2t', off = map ? 1 : 0, out = new Array(segs.length + off);
+        const keys = {}, getKey = k => keys[k.u] || (keys[k.u] = (async () => crypto.subtle.importKey('raw', await (await get(k.u)).arrayBuffer(), 'AES-CBC', false, ['decrypt']))());
         const dec = async (buf, s) => { const ck = await getKey(s.key), iv = new Uint8Array(16); if (s.key.iv) { const h = s.key.iv.padStart(32, '0'); for (let i = 0; i < 16; i++) iv[i] = parseInt(h.substr(i * 2, 2), 16); } else { let n = s.seq; for (let i = 15; i >= 8 && n > 0; i--) { iv[i] = n % 256; n = Math.floor(n / 256); } } return crypto.subtle.decrypt({ name: 'AES-CBC', iv }, ck, buf); };
-        if (map && !have.has(0)) { const b = await (await get(map)).blob(); await this._pput(this._pk(x.id, 0), new Blob([b], { type: x.mime })); x.bytes += b.size; }
-        let next = 0;
+        if (map) out[0] = await (await get(map)).arrayBuffer();
+        let next = 0, done = 0;
         const worker = async () => {
           for (;;) {
-            if (x._stop || ac.signal.aborted) return; const k = next++; if (k >= segs.length) return; if (have.has(k + 1)) continue;
+            if (x.stop) return; const k = next++; if (k >= segs.length) return;
             for (let t = 0; ; t++) {
-              try { const r = await get(segs[k].u); let buf = await r.arrayBuffer(); if (segs[k].key) buf = await dec(buf, segs[k]); const b = new Blob([buf], { type: x.mime }); await this._pput(this._pk(x.id, k + 1), b); x.segDone++; x.bytes += b.size; x.total = Math.round(x.bytes / x.segDone * x.segTotal); break; }
-              catch (e) { if (ac.signal.aborted || x._stop || e.fatal || e.name === 'QuotaExceededError' || t >= 3) { if (e && e.name === 'QuotaExceededError') { e.fatal = true; e.message = 'Device storage পূর্ণ'; } throw e; } await this._dlWait(700 * (t + 1), x); }
+              try { let buf = await (await get(segs[k].u)).arrayBuffer(); if (segs[k].key) buf = await dec(buf, segs[k]); out[k + off] = buf; done++; x.pct = Math.min(99, Math.floor(done / segs.length * 100)); this._dlUI(); break; }
+              catch (e) { if (x.stop || e.fatal || t >= 3) throw e; await new Promise(r => setTimeout(r, 700 * (t + 1))); }
             }
           }
         };
-        const res = await Promise.allSettled([worker(), worker(), worker()]), bad = res.find(r => r.status === 'rejected'); if (bad) throw bad.reason;
-        if (x._stop || ac.signal.aborted) { const e = new Error('stopped'); e.name = 'AbortError'; throw e; }
-        const cnt = (await this._pscan(x.id)).length; if (cnt < segs.length + (map ? 1 : 0)) throw new Error('কিছু সেগমেন্ট বাকি আছে');
-      }
-      async _dlFinish(x) {
-        try { const tp = this._thumbPs && this._thumbPs[x.id]; if (tp) await tp; } catch (e) { }
-        const parts = await this._pall(x.id); if (!parts.length) throw new Error('ডাউনলোড ডেটা পাওয়া যায়নি');
-        const ext = x.ext || 'mp4', blob = new Blob(parts, { type: x.mime || 'video/mp4' });
-        x.bytes = x.size = x.total = blob.size; x.pct = 100;
-        const ok = await this.saveOfflineVideo(x, blob, ext), dev = this._dlDevCopy() || !ok;
-        if (dev) this.dlSave(blob, this._dlSafe(x.title) + '.' + ext);
-        if (!ok) x.warn = 'Download Manager-এ জায়গা হয়নি — ফাইলটি device-এর Downloads-এ সেভ হয়েছে।';
-        else if (ext === 'ts') { const pv = document.createElement('video'); if (!pv.canPlayType('video/mp2t')) x.warn = 'এটি .ts ফরম্যাট — এই browser-এ Offline Play নাও চলতে পারে; ⬇ Save করে অন্য player-এ চালান।'; }
-        await this._pdel(x.id);
-        x.state = 'done'; x.finishedAt = Date.now(); x.segDone = x.segTotal;
-        this.toast(ok ? 'ডাউনলোড 100% সম্পন্ন — Offline Play প্রস্তুত' : 'ডাউনলোড সম্পন্ন — device-এ সেভ হয়েছে', ok ? 'success' : 'info');
-      }
-      async runDownload(x) {
-        x.state = 'downloading'; x._running = true; x.error = ''; x.warn = ''; x._stop = null; x.ac = new AbortController(); x.runAt = Date.now(); x.startedAt = x.startedAt || x.runAt; x._lb = x.bytes || 0; x._lt = x.runAt; x._sp = 0;
-        this.renderDlQueue(true); this._dlTickStart();
-        let attempt = 0;
-        try {
-          for (;;) {
-            try { x._stall = false; await (x.isHls ? this._dlHls(x) : this._dlPlain(x)); break; }
-            catch (e) {
-              if (x._stop) throw e;
-              if (e && (e.fatal || e.embed)) throw e;
-              if (navigator.onLine === false) { x.note = 'Internet নেই — অপেক্ষা…'; while (navigator.onLine === false && !x._stop) await this._dlWait(1000, x); if (x._stop) throw e; }
-              else { if (++attempt > 6) throw e; x.note = 'আবার চেষ্টা ' + attempt + '/6'; await this._dlWait(Math.min(1000 * 2 ** (attempt - 1), 15000), x); if (x._stop) throw e; }
-              x.ac = new AbortController();
-            }
-          }
-          x.note = ''; await this._dlFinish(x);
-        } catch (e) {
-          if (x._stop) { /* paused / deleted by user */ }
-          else { x.state = 'error'; x.error = (e && e.message) || 'Download failed'; this.toast('ডাউনলোড ব্যর্থ: ' + x.title, 'danger'); }
-        } finally {
-          x.elapsed = (x.elapsed || 0) + (Date.now() - x.runAt); x.runAt = 0; x.ac = null; x.note = ''; x._running = false;
-          if (x._stop === 'delete') this._pdel(x.id);
-          if (x.state === 'downloading') x.state = 'error';
-          this._dlWorkers = Math.max(0, this._dlWorkers - 1); this._dlPersist(); this.renderDlQueue(true); this.pumpDlQueue();
-          if (x.state === 'done' && window.__nexaLib) window.__nexaLib.refresh();
-        }
-      }
-      pumpDlQueue() {
-        if (navigator.onLine === false) return;
-        const now = Date.now();
-        while (this._dlWorkers < this._dlMaxWorkers) {
-          const x = this._dlQueue.find(a => a.state === 'queued' && !a._running && (!a.autoAt || a.autoAt <= now)); if (!x) break;
-          this._dlWorkers++; this.runDownload(x);
-        }
-        if (this._dlQueue.some(a => a.state === 'queued' || a.state === 'downloading')) this._dlTickStart();
+        await Promise.all([worker(), worker(), worker()]);
+        if (x.stop) throw new Error('stopped');
+        return new Blob(out, { type: mime });
       }
       tvPickSrc(entry) {
         const S = this.tvSources(entry); if (!S.length) return null;
@@ -5622,15 +4922,13 @@ body.nol-playing header.app-header,body.nol-playing nav.bottom-nav{display:none!
         this.currentView = v;
         this.updateBubble();
         this.updateFloatBubbles();
-        this.renderDlQueue();
         document.querySelectorAll('.view-page').forEach(p => p.classList.remove('active'));
         document.getElementById(`view-${v}`)?.classList.add('active');
         document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-        const navMap = { home: 0, magazine: 1, book: 1, season: 1, reader: 1, orders: 4, tv: 2, tvmore: 2, tvplat: 2, tvsc: 2, anime: 2, tvcat: 2, tvitem: 2, dlm: 3, wallet: 5, account: 6, history: 6 };
+        const navMap = { home: 0, magazine: 1, book: 1, season: 1, reader: 1, orders: 3, tv: 2, tvmore: 2, tvplat: 2, tvsc: 2, anime: 2, tvcat: 2, tvitem: 2, wallet: 4, account: 5, history: 5 };
         if (navMap[v] !== undefined) document.querySelectorAll('.nav-btn')[navMap[v]]?.classList.add('active');
         window.scrollTo({ top: 0, behavior: 'auto' });
         if (v === 'tv') this.renderTv();
-        if (v === 'dlm' && window.__nexaLib) window.__nexaLib.enter();
         if (v === 'anime') this.renderAnime();
         if (v === 'tvmore') this.renderTvMore();
         if (v === 'tvplat') this.renderTvPlat();
